@@ -7,7 +7,9 @@
 ---
 
 # theme : 
+### You need some fresh air? Go to Walk2BE website to find your walk!
 
+![preview](/images/walk2BE.png)
 ---
 
 # Langages used : 
