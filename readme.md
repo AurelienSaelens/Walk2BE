@@ -7,7 +7,7 @@
 ---
 
 # theme : 
-### You need some fresh air? Go to Walk2BE website to find your walk!
+### You need some fresh air? Go to Walk2BE website to find your walk! (Thanks [Ammar](https://github.com/Alsharek) for the logo!)
 
 ![preview](/images/walk2BE.png)
 ---
