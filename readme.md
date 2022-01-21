@@ -32,18 +32,6 @@
 
 --- 
 
-# ideas : 
-
-### - Santé avec stats mondial ou national.
-### - Site de recette avec ingrédients limités. 
-### - Application qui permettrait de trouver des sites de freecamp. Belgique et peut-etre France.
-### - Site design avec thème au choix. drag and drop, animation, ...
-### - Petit framework hand made...
-### - Site galerie d'art avec artistes, profil des artistes, et leur création.
-### - Application qui permettrait de trouver des balades par région (map).
-### - Application canine pour l'alimentation, le comportement,etc...
-
----
 
 # Preview : 
 
@@ -58,6 +46,4 @@
 ![preview](/images/maquette2.png)
 
 
-- Pouvoir trouver des balades via recherche et pouvoir poster ses propres balades et site si pas encore sur l'application.
-- 
 
