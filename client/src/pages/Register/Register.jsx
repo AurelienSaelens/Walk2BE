@@ -2,6 +2,7 @@ import { useRef } from "react";
 import "./register.css";
 import { useHistory } from "react-router";
 import { Link } from "react-router-dom"; 
+import Walk from "../Walk/Walk";
 
 
 export default function Register() {
@@ -61,7 +62,7 @@ export default function Register() {
               <button className="registerButton" type="submit">
                 Sign Up
               </button>
-              <Link className="linkRegister" to="/">
+              <Link className="linkRegister" to="/Walk.jsx">
                 <button to="/Login" className="loginRegisterButton">Log into Account</button>
               </Link>
             </form>

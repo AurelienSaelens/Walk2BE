@@ -1,0 +1,8 @@
+.fetching {
+    position: relative;
+    background-color: #210003;
+    height: 500px;
+    width: auto;
+    text-align: center;
+    top: 960px;
+}
