@@ -7,7 +7,8 @@
 ---
 
 # theme : 
-### You need some fresh air? Go to Walk2BE website to find your walk!
+### You need some fresh air? Go to Walk2BE website to find your walk! <br>
+(Thanks [Ammar](https://github.com/Alsharek) for the logo!)
 
 ![preview](/images/walk2BE.png)
 ---
@@ -21,8 +22,6 @@
 
 # To do : 
 ### **Mobile first haha**
- [] Front page. <br>
- [] Top bar.
 ---
 
 # Done : 
@@ -32,7 +31,6 @@
 # Features : 
 
 --- 
-
 
 
 # Preview : 
@@ -46,6 +44,4 @@
 <br>
 
 ![preview](/images/maquette2.png)
-
-
 
