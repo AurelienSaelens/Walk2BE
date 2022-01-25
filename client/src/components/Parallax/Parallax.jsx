@@ -1,6 +1,6 @@
 import React from 'react';
-import parallax from './parallax.css'
-
+import './parallax.css'
+import Box from '@mui/material/Box';
 function Parallax () {
 
   function castParallax() {
@@ -27,7 +27,9 @@ function Parallax () {
   document.body.onload = castParallax();
   
   return (
+
     <div className="keyart" id="parallax">
+      <Box sx={{ flexGrow: 1 }}></Box>
       <div className="keyart_layer parallax" id="keyart-0" data-speed="2"></div>
       <div className="keyart_layer parallax" id="keyart-1" data-speed="5"></div>
       <div className="keyart_layer parallax" id="keyart-2" data-speed="11"></div>
@@ -39,10 +41,9 @@ function Parallax () {
       <div className="keyart_layer parallax" id="keyart-7" data-speed="69"></div>
       <div className="keyart_layer" id="keyart-8" data-speed="100"></div>	
     </div>
-    
 
   );
-}
+  }
 
 export default Parallax ;
 

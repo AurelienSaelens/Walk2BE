@@ -1,0 +1,5 @@
+#hamburger-icon {
+  position: absolute;
+  position: fixed;
+  z-index: 11;
+}

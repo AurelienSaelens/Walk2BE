@@ -1,0 +1,15 @@
+.Content {
+    position: relative;
+    background-color: #210003;
+    height: 500px;
+    width: auto;
+    text-align: center;
+    top: 960px;
+}
+.Content h3 {
+  text-align: center;
+  color: #ffaf00;
+  justify-content: space-around;
+  font-size: 30px;
+    line-height: 1.5em;
+}

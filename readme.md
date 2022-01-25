@@ -21,6 +21,8 @@
 
 # To do : 
 ### **Mobile first haha**
+ [] Front page. <br>
+ [] Top bar.
 ---
 
 # Done : 
