@@ -1,19 +1,43 @@
-import react from 'react';
+import { useState }from 'react';
 import './fetchapi.css';
 import Api from '../../Api.json';
-import Iframe from 'react-iframe'
 
 function Fetchapi() {
+
+  const [search, setSearch] = useState("");
+
     return (
         <div className="posts">
-        {Api.map(post => {
+        <input 
+          type="text"
+          placeholder="Search location"
+          onChange={e=>{
+            setSearch(e.target.value)
+          }}
+        />
+        {Api.filter(post => {
+          if (search == "") {
+            return post
+          }
+          else if (post.fields.localite.toLowerCase().includes(search.toLowerCase())) {
+            return post
+          }
+        }).map(post => {
           return(
             <>
-            <h1>{ post.datasetid }</h1>
-            <h2>{ post.fields.entite }</h2>
-            <p>{post.fields.longitude}</p>
-            <p>{post.fields.latitude}</p>
-            <Iframe url="https://www.google.be/maps/@50.154465,4.624975,8z?hl=fr" width="200px" height="200px" id="myId" className="myClassname" display="initial"/>
+            <div class="card">
+            <div class="container">
+              <h2>{post.fields.entite}</h2>
+              <p>{post.fields.localite}</p>
+              <p> Le lieu de rendez-vous se trouve : <b>{post.fields.lieu_de_rendez_vous}</b></p>
+              <h4>Plus de renseignements :</h4>
+              <p>Activité : <b>{post.fields.activite}</b></p>
+              <p>Velo : <b>{post.fields.velo}</b></p>
+              <p>Balade guidée : <b>{post.fields.balade_guidee}</b></p>
+              <p>Orientation : <b>{post.fields.orientation}</b></p>
+
+            </div>
+          </div>
             </>
           )
         })}
