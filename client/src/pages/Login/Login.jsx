@@ -15,45 +15,22 @@ export default function Login() {
  
 
   return (
-    <div className="login">
-      <div className="loginWrapper">
-        <div className="loginRight">
-          <form className="loginBox" onSubmit={handleClick}>
-            <input
-              placeholder="Email"
-              type="email"
-              required
-              className="loginInput"
-              ref={email}
-            />
-            <input
-              placeholder="Password"
-              type="password"
-              required
-              minLength="6"
-              className="loginInput"
-              ref={password}
-            />
-            <button className="loginButton" type="submit" disabled={isFetching}>
-              {isFetching ? (
-                <CircularProgress color="white" size="20px" />
-              ) : (
-                "Log In"
-              )}
-            </button>
-            <a href="#" className="loginForgot">Forgot Password?</a>
-            <Link className="linkRegister" to="/register">
-            <button className="loginRegisterButton">
-              {isFetching ? (
-                <CircularProgress color="white" size="20px" />
-              ) : (
-                "Create a New Account"
-              )}
-            </button>
-            </Link>
-          </form>
+    <div class="signupFrm">
+      <form action="" class="form">
+        <h1 class="title">Sign in</h1>
+  
+        <div class="inputContainer">
+          <input type="text" class="input" placeholder="a" />
+          <label for="" class="label">Email</label>
         </div>
-      </div>
+  
+        <div class="inputContainer">
+          <input type="text" class="input" placeholder="a" />
+          <label for="" class="label">Password</label>
+        </div>
+  
+        <input type="submit" class="submitBtn" value="Sign up" />
+      </form>
     </div>
   );
 }

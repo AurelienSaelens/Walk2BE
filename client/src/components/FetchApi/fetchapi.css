@@ -6,3 +6,12 @@
     text-align: center;
     top: 960px;
 }
+
+.output {
+    background: #eee;
+}
+
+
+.map-container {
+    height: 400px;
+    }

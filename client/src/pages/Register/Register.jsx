@@ -32,42 +32,32 @@ export default function Register() {
     };
   
     return (
-      <div className="register">
-        <div className="registerWrapper">
-          <div className="registerLeft">
-          </div>
-          <div className="registerRight">
-            <form className="registerBox" onSubmit={handleClick}>
-              <input
-                placeholder="Username"
-                required
-                ref={username}
-                className="registerInput"
-              />
-              <input
-                placeholder="Email"
-                required
-                ref={email}
-                className="registerInput"
-                type="email"
-              />
-              <input
-                placeholder="Password"
-                required
-                ref={password}
-                className="registerInput"
-                type="password"
-                minLength="6"
-              />
-              <button className="registerButton" type="submit">
-                Sign Up
-              </button>
-              <Link className="linkRegister" to="/Walk.jsx">
-                <button to="/Login" className="loginRegisterButton">Log into Account</button>
-              </Link>
-            </form>
-          </div>
+      <div class="signupFrm">
+      <form action="" class="form">
+        <h1 class="title">Sign up</h1>
+  
+        <div class="inputContainer">
+          <input type="text" class="input" placeholder="a" />
+          <label for="" class="label">Email</label>
         </div>
-      </div>
+  
+        <div class="inputContainer">
+          <input type="text" class="input" placeholder="a" />
+          <label for="" class="label">Username</label>
+        </div>
+  
+        <div class="inputContainer">
+          <input type="text" class="input" placeholder="a" />
+          <label for="" class="label">Password</label>
+        </div>
+  
+        <div class="inputContainer">
+          <input type="text" class="input" placeholder="a" />
+          <label for="" class="label">Confirm Password</label>
+        </div>
+  
+        <input type="submit" class="submitBtn" value="Sign up" />
+      </form>
+    </div>
     );
   }

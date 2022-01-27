@@ -1,89 +1,94 @@
-.registerWrapper {
-    position: relative;
-    width: 60%;
-    height: 70%;
+.signupFrm {
     display: flex;
-    left: 50%;
-    transform: translateX(-75%);
-
-  }
-  
-  .registerLeft,
-  .registerRight {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-  }
-  
-  
-  .registerBox{
-      height: 300px;
-      padding: 20px;
-      background-color: #210003;
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      box-shadow: rgba(255,174,26,255) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-  }
-  
-  .registerInput{
-      height: 50px;
-      border-radius: 10px;
-      border: 1px solid gray;
-      font-size: 18px;
-      padding-left: 20px;
-      padding-top: 10px;
+    align-items: center;
+    height: 100vh;
   }
 
-  
-  .registerButton{
-      height: 50px;
-      border-radius: 10px;
-      border: none;
-      background-color: #ffaf00;
-      color: #210003;
-      font-size: 20px;
-      font-weight: 500;
-      cursor: pointer;
-  }
-  .registerButton:hover {
-      cursor: pointer;
-      color: #ffaf00;;
-      background-color: #210003;
+  .form {
+    background-color: #ffaf00;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
   }
   
+  .title {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
 
-  
-  .registerButton:disabled{
-    cursor: not-allowed;
+  .inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+  }
+  .input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
   }
   
-  .registerForgot{
-      text-align: center;
-      color: #1775ee;
-  }
+  /* Hide the placeholder texts (a) */
   
-  .loginRegisterButton{
-      width: 60%;
-      align-self: center;
-      height: 50px;
-      border-radius: 10px;
-      border: none;
-      background-color: #ffaf00;
-      color: #210003;
-      font-size: 20px;
-      font-weight: 500;
-      cursor: pointer;
+  ::placeholder {
+    color: transparent;
   }
-  .loginRegisterButton:hover {
+  .label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    color: #210003;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+  }
+
+  .submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: #210003;
+    color: #ffaf00;
+    border-radius: 6px;
     cursor: pointer;
-    color: #ffaf00;;
-    background-color: #210003; 
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  
+  .submitBtn:hover {
+    background-color: #210003;
+    transform: translateY(-2px);
   }
 
-  .loginForgot a {
-      text-decoration: none;
-      color: #ffaf00;
+  .input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: #210003;
+  }
+
+  .input:focus {
+    border: 2px solid #210003;
+  }
+  .input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
   }
