@@ -29,7 +29,7 @@ export default function Login() {
           <label for="" class="label">Password</label>
         </div>
   
-        <input type="submit" class="submitBtn" value="Sign up" />
+        <input type="submit" class="submitBtn" value="Sign in" />
       </form>
     </div>
   );
