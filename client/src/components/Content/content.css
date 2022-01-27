@@ -9,16 +9,11 @@
 .Content h3 {
   text-align: center;
   color: #ffaf00;
-  justify-content: space-around;
   font-size: 30px;
-    line-height: 1.5em;
+  line-height: 2em;
 }
 
-p { padding: 2em; }
-
-
-  
-  button {
+.Content  button {
       position: relative;
       width: 200px;
       height: 100px;
@@ -35,13 +30,13 @@ p { padding: 2em; }
       top: 150px;
   }
   
-  button:hover {
+.Content button:hover {
       box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
       font-size: 15px;
       transition: 500ms;
   }
   
-  button:focus {
+ .Content button:focus {
       outline: none;
   }
 
