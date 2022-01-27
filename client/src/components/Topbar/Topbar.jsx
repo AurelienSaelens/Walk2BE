@@ -5,7 +5,7 @@ function Topbar() {
    
 
   return (
-    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+    <div id="topbar" onclick="toggleMobileMenu(this)">
       <h1>LOREM</h1>
    </div>
 );

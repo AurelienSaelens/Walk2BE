@@ -1,5 +1,9 @@
-#hamburger-icon {
-  position: absolute;
-  position: fixed;
-  z-index: 11;
+#topbar{
+
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  background-color:white;
+  z-index:100;
+  top:0;
 }
