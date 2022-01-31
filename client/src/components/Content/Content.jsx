@@ -1,16 +1,22 @@
 import React, { useState } from "react";
 import Topbar from "../Topbar/Topbar";
 import "./content.css";
+import Register from "../../pages/Register/Register";
+import Login from "../../pages/Login/Login"
 
 function Content() {
+
+  const [showModal, setShowModal] = useState(false);
+  const openModal = () => {
+    setShowModal(prev => !prev)
+  }
+
+
 
 
   return (
     <div className="Content">
-      <h3>Walk2BE is a free platform dedicated <br></br> to short and long walks, by bike or on foot, <br></br>  it will make everyone happy.</h3>
-       <a href="/register"><button onclick="location.href='/register'" class="noselect red">Sign up</button></a>
-       <a href="/login"><button onclick="location.href='/register'" class="noselect red">Sign in</button></a>
-
+      <p>Walk2BE is a fantastic platform dedicated to short and long walks, by bike or on foot, <br></br>  it will make everyone <span class="yellow">happy</span>.<br></br>To find the ride of your <span className="yellow">dreams</span>, you just have to register and find your meeting point! <br></br> This platform is free and will remain so. </p>
     </div>
 
   );

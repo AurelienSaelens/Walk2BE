@@ -1,9 +1,27 @@
-import React from 'react';
+import {useState} from 'react';
 import './parallax.css'
 import Box from '@mui/material/Box';
+import Register from '../../pages/Register/Register';
+import  Content from '../Content/Content';
+import Login from '../../pages/Login/Login';
+import '../../pages/Register/register.css';
+
 function Parallax () {
 
+  const [showModal, setShowModal] = useState(false);
+  const openModal = () => {
+    setShowModal(prev => !prev)
+  }
+  const [showModal1, setShowModal1] = useState(false);
+  const openModal1 = () => {
+    setShowModal1(prev => !prev)
+  }
+
+
+
   function castParallax() {
+
+
 
     var opThresh = 350;
     var opFactor = 750;
@@ -23,14 +41,27 @@ function Parallax () {
       }
     });
   }
+
   
   document.body.onload = castParallax();
   
   return (
+    <> 
+    <div className="button">
+    <button onClick={openModal}  class="noselect red">Sign up</button>
+  </div>
+  <div className="register">
+    <Register className="register" showModal={showModal} setShowModal={setShowModal} />
+  </div>
+  <div className="button1">
+  <button onClick={openModal1}  class="noselect red">Sign in</button>
+</div>
+<div className="register">
+  <Login className="register" showModal1={showModal1} setShowModal1={setShowModal1} />
+</div>
 
     <div className="keyart" id="parallax">
       <Box sx={{ flexGrow: 1 }}></Box>
-      <div className="keyart_layer parallax" id="keyart-0" data-speed="2"></div>
       <div className="keyart_layer parallax" id="keyart-1" data-speed="5"></div>
       <div className="keyart_layer parallax" id="keyart-2" data-speed="11"></div>
       <div className="keyart_layer parallax" id="keyart-3" data-speed="16"></div>
@@ -41,6 +72,7 @@ function Parallax () {
       <div className="keyart_layer parallax" id="keyart-7" data-speed="69"></div>
       <div className="keyart_layer" id="keyart-8" data-speed="100"></div>	
     </div>
+    </>
 
   );
   }

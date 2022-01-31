@@ -1,14 +1,21 @@
-import { useRef } from "react";
-import "./register.css";
+import { useRef, useState } from "react";
 import { useHistory } from "react-router";
+import { style } from "@mui/system";
+import styled from "styled-components";
 
 
-export default function Register() {
+export default function Register({showModal, setShowModal}) {
     const username = useRef();
     const email = useRef();
     const password = useRef();
     const passwordAgain = useRef();
     const history = useHistory();
+
+
+    
+
+
+
   
     const handleClick = async (e) => {
       e.preventDefault();
@@ -28,9 +35,12 @@ export default function Register() {
         }
       }
     };
+
   
     return (
-      <div class="signupFrm">
+      <>
+      
+      {showModal ? <div class="signupFrm">
       <form action="" class="form">
         <h1 class="title">Sign up</h1>
   
@@ -56,6 +66,8 @@ export default function Register() {
   
         <input type="submit" class="submitBtn" value="Sign up" />
       </form>
-    </div>
-    );
-  }
+    </div> : null}
+
+    </>
+  );
+}

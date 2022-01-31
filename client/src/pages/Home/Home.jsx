@@ -5,7 +5,7 @@ import Parallax from '../../components/Parallax/Parallax';
 
 function Home() {
   return (
-    <div className="homeContainer">
+    <div className="home">
       <Parallax/>
       <Content />
     </div>

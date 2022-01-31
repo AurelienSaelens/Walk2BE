@@ -8,7 +8,7 @@ import {
   Route,
 } from "react-router-dom";
 import Register from './pages/Register/Register';
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from './Context/AuthContext';
 import Walk from './pages/Walk/Walk';
 import Login from './pages/Login/Login';
@@ -17,7 +17,9 @@ import Login from './pages/Login/Login';
 
 function App() {
   const { user } = useContext(AuthContext);
+
   return (
+    <>
     <Router>
       <Switch>
         <Route exact path="/">
@@ -27,13 +29,13 @@ function App() {
           <Login />
         </Route>
         <Route exact path="/register">
-        <Register />
         </Route>
         <Route exact path="/walk">
         <Walk />
         </Route>
       </Switch>
     </Router>
+    </>
   );
 }
 

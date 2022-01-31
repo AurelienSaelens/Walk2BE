@@ -1,8 +1,11 @@
+
 .signupFrm {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
   }
 
   .form {
@@ -36,7 +39,6 @@
     padding: 0 20px;
     outline: none;
     background: none;
-    z-index: 1;
   }
   
   /* Hide the placeholder texts (a) */
@@ -55,23 +57,8 @@
     z-index: 0;
   }
 
-  .submitBtn {
-    display: block;
-    margin-left: auto;
-    padding: 15px 30px;
-    border: none;
-    background-color: #210003;
-    color: #ffaf00;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 30px;
-  }
+
   
-  .submitBtn:hover {
-    background-color: #210003;
-    transform: translateY(-2px);
-  }
 
   .input:focus + .label {
     top: -7px;
