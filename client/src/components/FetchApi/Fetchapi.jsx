@@ -16,7 +16,7 @@ function Fetchapi() {
           }}
         />
         {Api.filter(post => {
-          if (search == "") {
+          if (search === "") {
             return post
           }
           else if (post.fields.localite.toLowerCase().includes(search.toLowerCase())) {
