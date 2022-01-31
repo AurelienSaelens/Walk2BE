@@ -1,0 +1,38 @@
+p {
+    color: red;
+}
+
+.map {
+    position: absolute;
+    position: fixed;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+.walk-btn {
+    background-color: transparent;
+    text-decoration: none;
+}
+.walk-btn:hover {
+    box-shadow: none;
+    font-weight: 900;
+}
+
+.Popup {
+    box-shadow: none;
+    width: 500px;
+    height: 200px;
+    opacity: 0.66;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    color: #ffaf00;
+}
+
+.info {
+    color: #000;
+    opacity: 1;
+    background-color: transparent;
+}
