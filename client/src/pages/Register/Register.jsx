@@ -19,10 +19,16 @@ export default function Register ({showModal, setShowModal}) {
     error_list: [],
   });
 
+
   const handleInput = (e) => {
     e.persist();
     setRegister({...registerInput, [e.target.name]: e.target.value});
   }
+
+  
+
+    
+
 
   const registerSubmit = (e) => {
     e.preventDefault();

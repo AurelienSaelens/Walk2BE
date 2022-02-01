@@ -6,8 +6,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Register from './pages/Register/Register';
-import { useContext, useState } from "react";
+import { useContext} from "react";
 import { AuthContext } from './Context/AuthContext';
 import Walk from './pages/Walk/Walk';
 import Login from './pages/Login/Login';
@@ -20,19 +19,12 @@ axios.defaults.withCredentials = true;
 
 
 function App() {
-  const { user } = useContext(AuthContext);
-
   return (
     <>
     <Router>
       <Switch>
         <Route exact path="/">
        <Home /> 
-        </Route>
-        <Route exact path="/login">
-          <Login />
-        </Route>
-        <Route exact path="/register">
         </Route>
         <Route exact path="/walk">
         <Walk />

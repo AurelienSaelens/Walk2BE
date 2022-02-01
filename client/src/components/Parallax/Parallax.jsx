@@ -48,14 +48,14 @@ function Parallax () {
   return (
     <> 
     <div className="button">
-    <button onClick={openModal}  class="noselect red">Sign up</button>
-  </div>
-  <div className="register">
-    <Register className="register" showModal={showModal} setShowModal={setShowModal} />
-  </div>
-  <div className="button1">
-  <button onClick={openModal1}  class="noselect red">Sign in</button>
-</div>
+      <button onClick={openModal}  class="noselect red">Sign up</button>
+    </div>
+    <div className="register">
+      <Register className="register" showModal={showModal} setShowModal={setShowModal} />
+    </div>
+    <div className="button1">
+      <button onClick={openModal1}  class="noselect red">Sign in</button>
+    </div>
 <div className="register">
   <Login className="register" showModal1={showModal1} setShowModal1={setShowModal1} />
 </div>
