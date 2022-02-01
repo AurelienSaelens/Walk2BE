@@ -1,0 +1,34 @@
+.slider {
+    position: absolute;
+    bottom: 10%;
+    width: 80%;
+    left: 10%;
+    height: 300px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    justify-content: center;
+}
+.slider-img {
+    height: 100%;
+    background-color: #000;
+    text-align: center;
+    padding: 3rem;
+}
+
+.slider-inner {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 200%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    pointer-events: none;
+    transition: 0s ease-in;
+}
+
