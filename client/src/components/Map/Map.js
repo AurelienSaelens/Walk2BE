@@ -9,8 +9,8 @@ const [viewport, setViewport] = useState({
     latitude: 50.8386528,
     longitude: 4.4677877,
     width: "66vw",
-    height: '100vh',
-    zoom: 10 
+    height: '130vh',
+    zoom: 8 
 });
 const [selectedWalk, setSelectedWalk] = useState(null);
   return (
@@ -23,7 +23,7 @@ const [selectedWalk, setSelectedWalk] = useState(null);
             }}
         >
             {Api.map((walk) => (
-                <Marker 
+                <Marker onClick={(e) => {}}
                     key={walk.fields.localite} 
                     latitude={walk.geometry.coordinates[1]} 
                     longitude={walk.geometry.coordinates[0]}

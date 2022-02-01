@@ -1,5 +1,5 @@
 p {
-    color: red;
+    color: green;
 }
 
 .map {
@@ -8,7 +8,13 @@ p {
     right: 0;
     top: 0;
     overflow: hidden;
+    box-shadow: -10px 0 5px -5px #333, 10px 0 5px -5px #333;
+    border-radius: 5px;
+    margin-right: 5px;
+    border-bottom-left-radius: 5px ;
+    height: 100%;
 }
+
 .walk-btn {
     background-color: transparent;
     text-decoration: none;
@@ -28,7 +34,7 @@ p {
 .icon {
     width: 25px;
     height: 25px;
-    color: #ffaf00;
+    color: greenyellow;
 }
 
 .info {
