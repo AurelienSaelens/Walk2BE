@@ -1,60 +1,34 @@
 .Content {
     position: relative;
     background-color: #210003;
-    height: 350px;
+    height: 1000px;
     width: auto;
     text-align: center;
     top: 960px;
 
 
 }
-.Content p {
+.Content > p {
   position: relative;
   top: 75px;
   text-align: center;
   color: #ffe473;
   line-height: 2em;
-  font-size: 23px;
-  font-family: 'Source Serif 4', sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+
 }
 
-.Content  button {
-      position: relative;
-      width: 200px;
-      height: 100px;
-      cursor: pointer;
-      background: #210003;
-      margin: 10px;
-      border: none;
-      border-radius: 10px;
-      box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
-      color: #ffaf00;
-      font-size: 16px;
-      justify-content: center;
-      bottom: 25px;
-
-  }
-  
-.Content button:hover {
-      box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
-      font-size: 15px;
-      transition: 500ms;
-  }
-  
- .Content button:focus {
-      outline: none;
-  }
 
   .yellow {
     color: #df711e;
   }
 
-.register {
-  position: relative;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-}
+  .slider {
+    z-index: 20;
+  }
+
+
 
 
   

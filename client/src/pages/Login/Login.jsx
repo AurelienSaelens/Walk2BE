@@ -5,7 +5,7 @@ import { CircularProgress } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import Content from "../../components/Content/Content";
 
-export default function Login({showModal1, setShowModal}) {
+export default function Login({showModal1, setShowModal1}) {
   const email = useRef();
   const password = useRef();
   const { isFetching, dispatch } = useContext(AuthContext);
