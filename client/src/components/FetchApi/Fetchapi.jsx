@@ -7,7 +7,11 @@ function Fetchapi() {
 
   const [search, setSearch] = useState("");
 
+  const handleSearch = (event) =>{
+  }
+
     return (
+      <div className="body">
         <div className="posts">
         <input id="searchInput"
           type="text"
@@ -39,6 +43,7 @@ function Fetchapi() {
             </>
           )
         })}
+    </div>
     </div>
     );
 }

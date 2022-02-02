@@ -57,8 +57,8 @@ function Parallax () {
     <div className="button1">
       <button onClick={openModal1}  class="noselect red">Sign in</button>
     </div>
-<div className="register">
-  <Login className="register" showModal1={showModal1} setShowModal1={setShowModal1} />
+<div className="login">
+  <Login className="login" showModal1={showModal1} setShowModal={setShowModal} />
 </div>
 
     <div className="keyart" id="parallax">

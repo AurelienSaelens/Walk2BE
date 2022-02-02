@@ -8,6 +8,10 @@ function Content() {
   const openModal = () => {
     setShowModal(prev => !prev)
   }
+  const [showModal1, setShowModal1] = useState(false);
+  const openModal1 = () => {
+    setShowModal1(prev => !prev)
+  }
 
 
 
