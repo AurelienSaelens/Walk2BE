@@ -51,7 +51,7 @@ export default function Register ({showModal, setShowModal}) {
         <>
         {showModal ?<div className="signupFrm">
         <form onSubmit={registerSubmit} className="form">
-          <h1 className="title">Sign up</h1>
+          <h1 className="title">Register</h1>
     
           <div class="inputContainer">
             <input type="" name="username" onChange={handleInput} value={registerInput.username} class="input" placeholder="a" />

@@ -54,7 +54,7 @@ export default function Login({showModal1, setShowModal1}) {
     {showModal1 ?  <div class="signupFrm">
 
     <form onSubmit={loginSubmit} class="form">
-    <h1 class="title">Sign in</h1>
+    <h1 class="title">Login</h1>
 
     <div class="inputContainer">
       <input type="email" name="email" onChange={handleInput} value={loginInput.email} class="input" placeholder="a" />
