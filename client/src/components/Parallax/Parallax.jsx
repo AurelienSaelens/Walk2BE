@@ -43,6 +43,7 @@ export default function Parallax () {
   
   return (
     <> 
+
       <div className="button">
         <button onClick={openModal}  class="noselect red">Register</button>
       </div>
@@ -55,6 +56,7 @@ export default function Parallax () {
       <div className="login">
         <Login className="login" showModal1={showModal1} setShowModal1={setShowModal1} />
       </div>
+
 
       <div className="keyart" id="parallax">
         <Box sx={{ flexGrow: 1 }}></Box>

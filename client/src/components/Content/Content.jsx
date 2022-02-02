@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./content.css";
 import Slider from "../Slider/Slider";
 
-export default function Content() {
 
+export default function Content() {
 
   return (
     <>

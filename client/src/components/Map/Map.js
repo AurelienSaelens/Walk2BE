@@ -10,7 +10,7 @@ const [viewport, setViewport] = useState({
     longitude: 4.4677877,
     width: "66vw",
     height: '130vh',
-    zoom: 8 
+    zoom: 8
 });
 const [selectedWalk, setSelectedWalk] = useState(null);
   return (
@@ -22,7 +22,20 @@ const [selectedWalk, setSelectedWalk] = useState(null);
                 setViewport(viewport);
             }}
         >
-
+          {/*  {Api.map((walk) => (
+                // <Marker onClick={(e) => {}}
+                //     key={walk.fields.localite} 
+                //     latitude={walk.geometry.coordinates[1]} 
+                //     longitude={walk.geometry.coordinates[0]}
+                // >
+                //     <button className='walk-btn' onClick={(e) => {
+                //         e.preventDefault();
+                //         setSelectedWalk(walk);
+                //     }}>
+                //     <BsGeoAltFill className='icon' />
+                //     </button>
+                // </Marker>
+          ))} */}
   {selectedWalk ? (
     <Popup className='Popup' 
         latitude={selectedWalk.geometry.coordinates[1]} 

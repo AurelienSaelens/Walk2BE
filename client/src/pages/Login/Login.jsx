@@ -69,6 +69,7 @@ export default function Login({showModal1, setShowModal1}) {
     <span>{loginInput.error_list.password}</span>
 
     <input type="submit" class="submitBtn" value="Sign in" />
+
 </form>
     </div> : null}
     </>

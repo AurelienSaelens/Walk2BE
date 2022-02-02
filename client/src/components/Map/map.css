@@ -8,10 +8,6 @@ p {
     right: 0;
     top: 0;
     overflow: hidden;
-    box-shadow: -10px 0 5px -5px #333, 10px 0 5px -5px #333;
-    border-radius: 5px;
-    margin-right: 5px;
-    border-bottom-left-radius: 5px ;
     height: 100%;
 }
 
@@ -19,6 +15,7 @@ p {
     background-color: transparent;
     text-decoration: none;
     border: none;
+    box-shadow: none;
 }
 .walk-btn:hover {
     box-shadow: none;

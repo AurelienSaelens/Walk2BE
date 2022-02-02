@@ -1,8 +1,12 @@
 .walk-content {
     margin: 0;
     padding: 0;
+    background-color: red;
 }
 
 .walk-content h1 {
     color: red;
 }
+
+
+
