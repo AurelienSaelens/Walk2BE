@@ -14,24 +14,26 @@ function Fetchapi() {
           placeholder="search"
           onChange={e=>{
             setSearch(e.target.value)
+
+            
           }}
         />
         <Map />
-        {Api.filter(post => {
+        {Api.filter(api => {
           if (search === "") {
-            return post
+            return api
           }
-          else if (post.fields.localite.toLowerCase().includes(search.toLowerCase())) {
-            return post
+          else if (api.fields.localite.toLowerCase().includes(search.toLowerCase())) {
+            return api
           }
-        }).map(post => {
+        }).map(api => {
           return(
             <>
             <div class="card">
             <div class="container">
 
-             <h2>{post.fields.entite}</h2>
-              <p>{post.fields.localite}</p>
+             <h2>{api.fields.entite}</h2>
+              <p>{api.fields.localite}</p>
             </div>
           </div>
             </>

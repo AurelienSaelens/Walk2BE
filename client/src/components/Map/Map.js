@@ -22,20 +22,7 @@ const [selectedWalk, setSelectedWalk] = useState(null);
                 setViewport(viewport);
             }}
         >
-            {Api.map((walk) => (
-                <Marker onClick={(e) => {}}
-                    key={walk.fields.localite} 
-                    latitude={walk.geometry.coordinates[1]} 
-                    longitude={walk.geometry.coordinates[0]}
-                >
-                    <button className='walk-btn' onClick={(e) => {
-                        e.preventDefault();
-                        setSelectedWalk(walk);
-                    }}>
-                    <BsGeoAltFill className='icon' />
-                    </button>
-                </Marker>
-  ))}
+
   {selectedWalk ? (
     <Popup className='Popup' 
         latitude={selectedWalk.geometry.coordinates[1]} 

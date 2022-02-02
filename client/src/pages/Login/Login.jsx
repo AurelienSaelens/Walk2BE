@@ -53,39 +53,23 @@ export default function Login({showModal1, setShowModal1}) {
     <>
     {showModal1 ?  <div class="signupFrm">
 
-      <form onSubmit={loginSubmit} class="form">
-      <h1 class="title">Sign in</h1>
+    <form onSubmit={loginSubmit} class="form">
+    <h1 class="title">Sign in</h1>
 
-      <div class="inputContainer">
-        <input type="email" name="email" onChange={handleInput} value={loginInput.email} class="input" placeholder="a" />
-        <label for="" class="label">Email</label>
-      </div>
-      <span>{loginInput.error_list.email}</span>
+    <div class="inputContainer">
+      <input type="email" name="email" onChange={handleInput} value={loginInput.email} class="input" placeholder="a" />
+      <label for="" class="label">Email</label>
+    </div>
+    <span>{loginInput.error_list.email}</span>
 
-      <div class="inputContainer">
-        <input type="password" name="password" onChange={handleInput} value={loginInput.password} class="input" placeholder="a" />
-        <label for="" class="label">Password</label>
-      </div>
-      <span>{loginInput.error_list.password}</span>
+    <div class="inputContainer">
+      <input type="password" name="password" onChange={handleInput} value={loginInput.password} class="input" placeholder="a" />
+      <label for="" class="label">Password</label>
+    </div>
+    <span>{loginInput.error_list.password}</span>
 
-      <input type="submit" class="submitBtn" value="Sign in" />
-
-      <form action="" class="form">
-        <h1 class="title">Sign in</h1>
-  
-        <div class="inputContainer">
-          <input type="text" class="input" placeholder="a" />
-          <label for="" class="label">Email</label>
-        </div>
-  
-        <div class="inputContainer">
-          <input type="password" class="input" placeholder="a" />
-          <label for="" class="label">Password</label>
-        </div>
-  
-        <input type="submit" class="submitBtn" value="Sign in" />
-
-      </form>
+    <input type="submit" class="submitBtn" value="Sign in" />
+</form>
     </div> : null}
     </>
   );
