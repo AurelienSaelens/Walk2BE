@@ -27,7 +27,7 @@ export default function Login({showModal1, setShowModal1}) {
         </div>
   
         <div class="inputContainer">
-          <input type="text" class="input" placeholder="a" />
+          <input type="password" class="input" placeholder="a" />
           <label for="" class="label">Password</label>
         </div>
   

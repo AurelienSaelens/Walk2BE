@@ -11,6 +11,7 @@ function Parallax () {
   const [showModal, setShowModal] = useState(false);
   const openModal = () => {
     setShowModal(prev => !prev)
+    
   }
   const [showModal1, setShowModal1] = useState(false);
   const openModal1 = () => {

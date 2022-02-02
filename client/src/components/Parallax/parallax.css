@@ -60,10 +60,11 @@ button {
     width: 100px;
     height: 50px;
     cursor: pointer;
-    background: #210003;
+    background: rgba(0, 151, 19, 0.1);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     margin: 10px;
     border: none;
-    color: #ffe473;
+    color: white;
     font-size: 16px;
     justify-content: center;
     bottom: 25px;
@@ -79,13 +80,11 @@ button {
     z-index: 99;
     top: 0;
     justify-content: space-between;
+    background: rgba(0, 151, 19, 0.1);
+
 }
 
- button:hover {
-    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
-    font-size: 15px;
-    transition: 500ms;
-}
+
 
 button:focus {
     outline: none;

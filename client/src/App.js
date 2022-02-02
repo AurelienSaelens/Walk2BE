@@ -11,6 +11,7 @@ import { AuthContext } from './Context/AuthContext';
 import Walk from './pages/Walk/Walk';
 import Login from './pages/Login/Login';
 import axios from 'axios';
+import app from './app.css'
 
 axios.defaults.baseURL = "http://fundait.test/";
 axios.defaults.headers.post['Content-Type'] = 'application/json';
@@ -21,6 +22,7 @@ axios.defaults.withCredentials = true;
 function App() {
   return (
     <>
+    
     <Router>
       <Switch>
         <Route exact path="/">

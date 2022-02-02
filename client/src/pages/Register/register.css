@@ -6,19 +6,27 @@
     align-items: center;
     height: 100vh;
     overflow: hidden;
-  }
+    margin: 0px;
+    overflow: hidden;
+    background: rgba(0, 151, 19, 0.1);
+}
 
   .form {
-    background-color: #ffaf00;
     width: 400px;
     border-radius: 8px;
     padding: 20px 40px;
     box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    opacity: unset;
+    overflow: hidden;
   }
   
   .title {
     font-size: 50px;
     margin-bottom: 50px;
+    opacity: none;
+    text-align: center;
+    opacity: unset;
+    color: white;
   }
 
   .inputContainer {
@@ -26,6 +34,7 @@
     height: 45px;
     width: 90%;
     margin-bottom: 17px;
+    opacity: unset;
   }
   .input {
     position: absolute;
@@ -39,6 +48,7 @@
     padding: 0 20px;
     outline: none;
     background: none;
+    opacity: unset;
   }
   
   /* Hide the placeholder texts (a) */
@@ -55,6 +65,7 @@
     font-size: 16px;
     transition: 0.5s;
     z-index: 0;
+    text-align: center;
   }
 
 

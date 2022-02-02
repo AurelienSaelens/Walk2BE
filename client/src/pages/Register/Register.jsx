@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import "./register.css";
 import swal from 'sweetalert';
 import { useHistory } from 'react-router-dom';
-import { style } from "@mui/system";
-import styled from "styled-components";
 
 
 export default function Register ({showModal, setShowModal}) {
