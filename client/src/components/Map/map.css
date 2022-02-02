@@ -18,6 +18,7 @@ p {
 .walk-btn {
     background-color: transparent;
     text-decoration: none;
+    border: none;
 }
 .walk-btn:hover {
     box-shadow: none;

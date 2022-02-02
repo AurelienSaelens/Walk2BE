@@ -52,6 +52,7 @@ export default function Login({showModal1, setShowModal1}) {
   return (
     <>
     {showModal1 ?  <div class="signupFrm">
+
       <form onSubmit={loginSubmit} class="form">
       <h1 class="title">Sign in</h1>
 
@@ -68,6 +69,22 @@ export default function Login({showModal1, setShowModal1}) {
       <span>{loginInput.error_list.password}</span>
 
       <input type="submit" class="submitBtn" value="Sign in" />
+
+      <form action="" class="form">
+        <h1 class="title">Sign in</h1>
+  
+        <div class="inputContainer">
+          <input type="text" class="input" placeholder="a" />
+          <label for="" class="label">Email</label>
+        </div>
+  
+        <div class="inputContainer">
+          <input type="password" class="input" placeholder="a" />
+          <label for="" class="label">Password</label>
+        </div>
+  
+        <input type="submit" class="submitBtn" value="Sign in" />
+
       </form>
     </div> : null}
     </>
