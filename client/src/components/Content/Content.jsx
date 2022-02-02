@@ -2,19 +2,8 @@ import React, { useState } from "react";
 import "./content.css";
 import Slider from "../Slider/Slider";
 
-function Content() {
 
-  const [showModal, setShowModal] = useState(false);
-  const openModal = () => {
-    setShowModal(prev => !prev)
-  }
-  const [showModal1, setShowModal1] = useState(false);
-  const openModal1 = () => {
-    setShowModal1(prev => !prev)
-  }
-
-
-
+export default function Content() {
 
   return (
     <>
@@ -28,5 +17,4 @@ function Content() {
   );
 }
 
-export default Content
  
