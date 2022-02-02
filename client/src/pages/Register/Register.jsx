@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import "./register.css";
 import swal from 'sweetalert';
 import { useHistory } from 'react-router-dom';
-import { style } from "@mui/system";
-import styled from "styled-components";
 
 
 export default function Register ({showModal, setShowModal}) {
@@ -19,16 +17,10 @@ export default function Register ({showModal, setShowModal}) {
     error_list: [],
   });
 
-
   const handleInput = (e) => {
     e.persist();
     setRegister({...registerInput, [e.target.name]: e.target.value});
   }
-
-  
-
-    
-
 
   const registerSubmit = (e) => {
     e.preventDefault();
@@ -46,7 +38,7 @@ export default function Register ({showModal, setShowModal}) {
             localStorage.setItem('auth_token', res.data.token);
             localStorage.setItem('auth_name', res.data.username);
             swal("Success",res.data.message,"success");
-            history.pushState('/home');
+            history.push('/');
         }
         else{
             setRegister({...registerInput, error_list: res.data.validation_errors});
@@ -57,7 +49,6 @@ export default function Register ({showModal, setShowModal}) {
 
       return (
         <>
-      
         {showModal ?<div className="signupFrm">
         <form onSubmit={registerSubmit} className="form">
           <h1 className="title">Sign up</h1>
@@ -75,7 +66,7 @@ export default function Register ({showModal, setShowModal}) {
           <span>{registerInput.error_list.email}</span>
     
           <div class="inputContainer">
-            <input type="" name="password" onChange={handleInput} value={registerInput.password} class="input" placeholder="Password" />
+            <input type="password" name="password" onChange={handleInput} value={registerInput.password} class="input" placeholder="Password" />
             <label for="" class="label">Password</label>
           </div>
           <span>{registerInput.error_list.password}</span>
@@ -86,5 +77,4 @@ export default function Register ({showModal, setShowModal}) {
 
       </>
       );
-
   }
