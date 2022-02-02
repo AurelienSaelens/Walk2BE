@@ -2,14 +2,7 @@ import React, { useState } from "react";
 import "./content.css";
 import Slider from "../Slider/Slider";
 
-function Content() {
-
-  const [showModal, setShowModal] = useState(false);
-  const openModal = () => {
-    setShowModal(prev => !prev)
-  }
-
-
+export default function Content() {
 
 
   return (
@@ -24,5 +17,4 @@ function Content() {
   );
 }
 
-export default Content
  

@@ -10,7 +10,7 @@ import Walk from './pages/Walk/Walk';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import axios from 'axios';
-import app from './app.css'
+import app from './App.css'
 
 axios.defaults.baseURL = "http://fundait.test/";
 axios.defaults.headers.post['Content-Type'] = 'application/json';
