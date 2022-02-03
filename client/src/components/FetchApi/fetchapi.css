@@ -12,7 +12,7 @@
         margin-top: 10px;
         margin-bottom: 10px;
         margin-left: 10px;
-        background-color: #FFF;
+        background-color : rgba(255,255,255,0.16);
         border-color: #ffaf00;
         border: 10px;
         color: #ffaf00;
@@ -20,9 +20,16 @@
         
       }
       .card h2 {
-          color: #808000;
+          color: #FFF;
+      }
+      .card p {
+          color: #FFF;
       }
 
       .body {
-          background-color: #4b1338;
+        background-image: url('./back.png');
+        background-size: contain;
+        background-attachment: fixed;
+        height: 100%;
+        width: 100%;
       }

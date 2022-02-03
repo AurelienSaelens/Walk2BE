@@ -10,32 +10,50 @@ const [viewport, setViewport] = useState({
     longitude: 4.4677877,
     width: "66vw",
     height: '130vh',
-    zoom: 8
+    zoom: 11
 });
+
+
+
+
 const [selectedWalk, setSelectedWalk] = useState(null);
+
+
+
+
+
+
   return (
       <div className='map'>
         <ReactMapGL {...viewport} 
             mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
-            mapStyle="mapbox://styles/aureliensaelens/ckz2p57zo006z15p1cgmtqz0f"
+            mapStyle="mapbox://styles/aureliensaelens/ckz6xl50x002214njfll9zyix"
             onViewportChange ={viewport => {
                 setViewport(viewport);
             }}
         >
-          {/*  {Api.map((walk) => (
-                // <Marker onClick={(e) => {}}
-                //     key={walk.fields.localite} 
-                //     latitude={walk.geometry.coordinates[1]} 
-                //     longitude={walk.geometry.coordinates[0]}
-                // >
-                //     <button className='walk-btn' onClick={(e) => {
-                //         e.preventDefault();
-                //         setSelectedWalk(walk);
-                //     }}>
-                //     <BsGeoAltFill className='icon' />
-                //     </button>
-                // </Marker>
-          ))} */}
+           {Api.map((walk) => (
+
+               
+               
+                <Marker onClick={(e) => {}}
+                    key={walk.fields.localite} 
+                    latitude={walk.geometry.coordinates[1]} 
+                    longitude={walk.geometry.coordinates[0]}
+
+                >
+                    <button className='walk-btn' onClick={(e) => {
+                        e.preventDefault();
+                        setSelectedWalk(walk);
+                    }}>
+                    <BsGeoAltFill className='icon' />
+                    </button>
+           </Marker>  
+           
+                ))} 
+                
+                
+                
   {selectedWalk ? (
     <Popup className='Popup' 
         latitude={selectedWalk.geometry.coordinates[1]} 

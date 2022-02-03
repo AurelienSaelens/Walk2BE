@@ -49,7 +49,7 @@ export default function Register ({showModal, setShowModal}) {
 
       return (
         <>
-        {showModal ?<div className="signupFrm">
+        {showModal ? <div className="signupFrm">
         <form onSubmit={registerSubmit} className="form">
           <h1 className="title">Register</h1>
     

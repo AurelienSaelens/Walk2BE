@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Api from './Api.json'
+import Map from './components/FetchApi/Fetchapi'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -62,6 +64,8 @@ function checkboundary() {
 }
 
 checkboundary();
+
+
 
 
 // If you want to start measuring performance in your app, pass a function

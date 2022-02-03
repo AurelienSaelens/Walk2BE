@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "axios": "^0.25.0"
+    "@mapbox/mapbox-gl-directions": "^4.1.0",
+    "axios": "^0.25.0",
+    "mapbox-gl": "^2.7.0"
   }
 }
