@@ -10,9 +10,11 @@
         width: 31%;
         padding-top: 10px;
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         margin-left: 10px;
+        text-align: center;
         background-color: #FFF;
+        background: rgba(142, 72, 5, 0.300);
         border-color: #ffaf00;
         border: 10px;
         color: #ffaf00;
@@ -20,9 +22,20 @@
         
       }
       .card h2 {
-          color: #808000;
+          color: #FFF;
       }
 
       .body {
-          background-color: #4b1338;
+        background: rgb(246,201,13);
+        background: linear-gradient(180deg, rgba(246,201,13,1) 0%, rgba(240,162,3,1) 31%, rgba(162,62,16,1) 80%);
+        height: 100vh;
+        overflow-y: scroll;
+      }
+
+      #searchInput{
+          width: 400px;
+          margin-bottom: 20px;
+          margin-top: 20px;
+          margin-left: 5%;
+          color:black
       }

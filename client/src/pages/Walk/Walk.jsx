@@ -6,6 +6,7 @@ import Map from '../../components/Map/Map';
 function Walk() {
   return (
     <div className="walk-content">
+    <Topbar />
     <Fetchapi />
       <Map />
     </div>
