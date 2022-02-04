@@ -32,7 +32,7 @@ p {
 .icon {
     width: 25px;
     height: 25px;
-    color: greenyellow;
+    color: red;
 }
 
 .info {
@@ -40,3 +40,4 @@ p {
     opacity: 1;
     background-color: transparent;
 }
+

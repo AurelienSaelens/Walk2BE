@@ -12,9 +12,13 @@
         margin-top: 10px;
         margin-bottom: 30px;
         margin-left: 10px;
+
         text-align: center;
         background-color: #FFF;
         background: rgba(142, 72, 5, 0.300);
+
+        background-color : rgba(255,255,255,0.16);
+
         border-color: #ffaf00;
         border: 10px;
         color: #ffaf00;
@@ -23,13 +27,7 @@
       }
       .card h2 {
           color: #FFF;
-      }
 
-      .body {
-        background: rgb(246,201,13);
-        background: linear-gradient(180deg, rgba(246,201,13,1) 0%, rgba(240,162,3,1) 31%, rgba(162,62,16,1) 80%);
-        height: 100vh;
-        overflow-y: scroll;
       }
 
       #searchInput{
@@ -38,4 +36,17 @@
           margin-top: 20px;
           margin-left: 5%;
           color:black
+
+      }
+      .card p {
+          color: #FFF;
+      }
+
+      .body {
+        background-image: url('./back.png');
+        background-size: contain;
+        background-attachment: fixed;
+        height: 100%;
+        width: 100%;
+
       }

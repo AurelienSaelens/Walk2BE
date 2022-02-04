@@ -8,7 +8,6 @@ function Walk() {
     <div className="walk-content">
     <Topbar />
     <Fetchapi />
-      <Map />
     </div>
   );
 }

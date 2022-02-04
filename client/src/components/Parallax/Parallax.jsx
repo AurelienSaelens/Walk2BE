@@ -43,7 +43,6 @@ export default function Parallax () {
   
   return (
     <> 
-
       <div className="button">
         <button onClick={openModal}  class="noselect red">Register</button>
       </div>
