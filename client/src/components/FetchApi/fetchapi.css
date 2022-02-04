@@ -10,9 +10,15 @@
         width: 31%;
         padding-top: 10px;
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         margin-left: 10px;
+
+        text-align: center;
+        background-color: #FFF;
+        background: rgba(142, 72, 5, 0.300);
+
         background-color : rgba(255,255,255,0.16);
+
         border-color: #ffaf00;
         border: 10px;
         color: #ffaf00;
@@ -21,6 +27,16 @@
       }
       .card h2 {
           color: #FFF;
+
+      }
+
+      #searchInput{
+          width: 400px;
+          margin-bottom: 20px;
+          margin-top: 20px;
+          margin-left: 5%;
+          color:black
+
       }
       .card p {
           color: #FFF;
@@ -32,4 +48,5 @@
         background-attachment: fixed;
         height: 100%;
         width: 100%;
+
       }

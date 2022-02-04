@@ -20,8 +20,9 @@ function Fetchapi( {searchResult}) {
           placeholder="search"
           onChange={e=>{
             setSearch(e.target.value)
-}}
-        />
+
+          }}
+          />
         
         
         <Map />
