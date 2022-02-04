@@ -33,7 +33,7 @@ function Fetchapi( {searchResult}) {
           if (search === "") {
             return api
           }
-          else if (api.fields.localite.toLowerCase().includes(search.toLowerCase())) {
+          else if (api.fields.entite.toLowerCase().includes(search.toLowerCase())) {
             return api
           }
 
