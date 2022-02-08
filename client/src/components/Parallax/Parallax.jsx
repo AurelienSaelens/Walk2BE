@@ -20,14 +20,14 @@ export default function Parallax() {
     document.body.style.overflow = 'hidden';
   }
   else {
-    document.body.style.overflow = 'scroll'
+    document.body.style.overflow = ''
   }
 
   if (showModal1 === true) {
     document.body.style.overflow = 'hidden';
   }
   else if (showModal === false ){
-    document.body.style.overflow = 'scroll'
+    document.body.style.overflow = ''
   }
 
   function castParallax() {
