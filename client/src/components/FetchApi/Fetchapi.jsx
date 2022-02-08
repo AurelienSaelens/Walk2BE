@@ -22,7 +22,7 @@ function Fetchapi() {
   return (
     <div className="body">
       <div className="posts">
-        <input
+        <input search here
           id="searchInput"
           type="text"
           placeholder="search"
