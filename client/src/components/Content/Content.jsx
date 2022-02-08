@@ -1,13 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./content.css";
 import Slider from "../Slider/Slider";
-import Register from "../../pages/Register/Register";
 
 export default function Content() {
-  const [showModal, setShowModal] = useState(false);
-  const openModal = () => {
-    setShowModal((prev) => !prev);
-  };
+
   return (
     <>
       <div className="Content">
@@ -19,19 +15,9 @@ export default function Content() {
           <span class="yellow">register</span> and find your meeting point!{" "}
           <br></br> This platform is free and will remain so. <br></br>
         </p>
-        <button className="btn-register" onClick={openModal} class="noselect red">
-          Register
-        </button>
-      <div className="register">
-        <Register
-          className="register"
-          showModal={showModal}
-          setShowModal={setShowModal}
-        />
         <div className="slider">
           <Slider />
         </div>
-      </div>
       </div>
     </>
   );
