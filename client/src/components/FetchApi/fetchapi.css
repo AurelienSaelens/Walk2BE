@@ -56,4 +56,5 @@
           margin-top: 135px;
           font-size: larger;
           color: blue;
+          overflow-y: hidden;
       }
