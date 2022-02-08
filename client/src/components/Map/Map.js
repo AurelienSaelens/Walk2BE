@@ -9,7 +9,7 @@ const [viewport, setViewport] = useState({
     latitude: 50.8386528,
     longitude: 4.4677877,
     width: "66vw",
-    height: '130vh',
+    height: '105vh',
     zoom: 11
 });
 
