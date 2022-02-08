@@ -16,6 +16,20 @@ export default function Parallax() {
     setShowModal1((prev) => !prev);
   };
 
+  if (showModal === true) {
+    document.body.style.overflow = 'hidden';
+  }
+  else {
+    document.body.style.overflow = 'scroll'
+  }
+
+  if (showModal1 === true) {
+    document.body.style.overflow = 'hidden';
+  }
+  else if (showModal === false ){
+    document.body.style.overflow = 'scroll'
+  }
+
   function castParallax() {
     var opThresh = 350;
     var opFactor = 750;
