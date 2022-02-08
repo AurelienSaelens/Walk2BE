@@ -28,6 +28,11 @@
     z-index: 20;
   }
 
+  .btn-register {
+    position: relative;
+    top: 20%;
+  }
+
 
 
 
