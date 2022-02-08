@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./parallax.css";
 import Box from "@mui/material/Box";
 import Register from "../../pages/Register/Register";
-import Content from "../Content/Content";
 import Login from "../../pages/Login/Login";
 import "../../pages/Register/register.css";
 
@@ -31,14 +30,13 @@ export default function Parallax() {
   }
 
   function castParallax() {
-    var opThresh = 350;
-    var opFactor = 750;
+
 
     window.addEventListener("scroll", function (event) {
       var top = this.pageYOffset;
 
       var layers = document.getElementsByClassName("parallax");
-      var layer, speed, yPos;
+      var layer, speed;
       for (var i = 0; i < layers.length; i++) {
         layer = layers[i];
         speed = layer.getAttribute("data-speed");

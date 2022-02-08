@@ -3,14 +3,35 @@
   display: flex;
   justify-content: space-between;
   position: sticky;
-  background-color:white;
+  background-image: url('../FetchApi/back.png');
+  background-size: auto;
+  size: 10%;
   top:0;
   z-index: 15;
   height: 8vh;
 }
 
 .logout{
-  background-color: red;
+  background-image: url('../FetchApi/back1.webp');
   color: white;
   border-radius: 10px;
+}
+
+#topbar h1 {
+  color: #FFF;
+}
+
+.user-icon {
+  width: 100px;
+  color: blue;
+  margin-right: 100px;
+  margin-top: 18px;
+  font-size: larger;
+}
+
+.logo {
+  width: 13%;
+  height: 80px;
+  margin-bottom: 5px;
+  position: relative;
 }

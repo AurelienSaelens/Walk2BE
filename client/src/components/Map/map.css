@@ -41,3 +41,8 @@ p {
     background-color: transparent;
 }
 
+.searchInput {
+    position: relative;
+    top: 6%;
+}
+

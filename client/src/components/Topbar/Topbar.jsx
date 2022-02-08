@@ -3,6 +3,8 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import swal from "sweetalert";
 import "./topbar.css";
+import {FaUserAlt} from "react-icons/fa"
+import a from '../../../src/Aurlien.png'
 
 function Topbar() {
   const history = useHistory();
@@ -22,7 +24,12 @@ function Topbar() {
 
   return (
     <div id="topbar">
-      <h1>LOREM</h1>
+    <img className="logo"alt="" src={a} />
+      <div className="user-icon">
+      <button className="user-btn">
+      <FaUserAlt />
+      </button>
+      </div>
       <button type="button" onClick={logoutSubmit} className="logout">
         Logout
       </button>
