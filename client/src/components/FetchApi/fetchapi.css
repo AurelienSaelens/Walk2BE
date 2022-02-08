@@ -49,4 +49,14 @@
         background-image: url('./back.png');
         background-size: 34vw 120vh;
         background-attachment: fixed;
+        height: 100%;
+        width: 100%;
+
+      }
+
+      .iconLike {
+          position: relative;
+          margin-top: 135px;
+          font-size: larger;
+          color: blue;
       }

@@ -1,86 +1,67 @@
-import { useState }from 'react';
-import './fetchapi.css';
-import Api from '../../Api.json';
-import Map from '../Map/Map';
-import { BsGeoAltFill } from 'react-icons/bs';
-import mapboxgl from 'mapbox-gl';
+import { useState, useEffect } from "react";
+import "./fetchapi.css";
+import Api from "../../Api.json";
+import Map from "../Map/Map";
+import { BsGeoAltFill } from "react-icons/bs";
+import { FcLike } from "react-icons/fc";
+import mapboxgl from "mapbox-gl";
 
-function Fetchapi( {searchResult}) {
-
-
-
+function Fetchapi({ searchResult }) {
   const [search, setSearch] = useState("");
   const [selectedWalk, setSelectedWalk] = useState(null);
 
-    return (
-      <div className="body">
-        <div className="posts">
-        <input id="searchInput"
+  return (
+    <div className="body">
+      <div className="posts">
+        <input
+          id="searchInput"
           type="text"
           placeholder="search"
-          onChange={e=>{
-            setSearch(e.target.value)
-
+          onChange={(e) => {
+            setSearch(e.target.value);
           }}
-          />
-        
-        
+        />
+
         <Map />
-        
-        {Api.filter(api => {
 
-          
-
+        {Api.filter((api) => {
           if (search === "") {
-            return api
+            return api.fields.entite[0];
+          } else if (
+            api.fields.entite.toLowerCase().includes(search.toLowerCase())
+          ) {
+            return api;
           }
-          else if (api.fields.entite.toLowerCase().includes(search.toLowerCase())) {
-            return api
-          }
+        }).map((api) => {
+          <button
+            onClick={(e) => {}}
+            key={api.fields.localite}
+            latitude={api.geometry.coordinates[1]}
+            longitude={api.geometry.coordinates[0]}
+          ></button>;
 
-        }).map(api => {
-
-
-               
-               
-                <button onClick={(e) => {}}
-                    key={api.fields.localite} 
-                    latitude={api.geometry.coordinates[1]} 
-                    longitude={api.geometry.coordinates[0]}
-
-                >
-
-           </button>  
-           
-               
-
-
-          return(
+          return (
             <>
-            
-            <div className="card">
-            <div class="container">
-
-             <h2>{api.fields.entite}</h2>
-              <p>{api.fields.localite}</p>
-              <p>{api.fields.longitude}</p>
-              <p>{api.fields.latitude}</p>
-                  <button className='walk-btn'>
-                    <BsGeoAltFill className='icon' />
+              <div className="card">
+                <div class="container">
+                  <h2>{api.fields.entite}</h2>
+                  <p>{api.fields.localite}</p>
+                  <p>{api.fields.longitude}</p>
+                  <p>{api.fields.latitude}</p>
+                  <button className="walk-btn">
+                    <BsGeoAltFill className="icon" />
                   </button>
-                    
-            </div>
-          </div>
-          
-          
-          
+                  <button className="walk-btn">
+                    <FcLike className="iconLike" />
+                  </button>
+                </div>
+              </div>
             </>
-          )
+          );
         })}
+      </div>
     </div>
-    </div>
-    );
-    
+  );
 }
 
 export default Fetchapi;
