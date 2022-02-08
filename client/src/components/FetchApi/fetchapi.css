@@ -3,6 +3,9 @@
     position: sticky;
 }
 
+.posts::-webkit-scrollbar {
+    display: none;
+  }
 
     .card {
         /* Add shadows to create the "card" effect */
@@ -44,7 +47,7 @@
 
       .body {
         background-image: url('./back.png');
-        background-size: contain;
+        background-size: 34vw 120vh;
         background-attachment: fixed;
         height: 100%;
         width: 100%;
