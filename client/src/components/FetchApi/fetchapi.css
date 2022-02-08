@@ -50,3 +50,10 @@
         width: 100%;
 
       }
+
+      .iconLike {
+          position: relative;
+          margin-top: 135px;
+          font-size: larger;
+          color: blue;
+      }

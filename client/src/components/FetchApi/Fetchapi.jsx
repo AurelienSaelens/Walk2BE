@@ -3,6 +3,7 @@ import "./fetchapi.css";
 import Api from "../../Api.json";
 import Map from "../Map/Map";
 import { BsGeoAltFill } from "react-icons/bs";
+import { FcLike } from "react-icons/fc";
 import mapboxgl from "mapbox-gl";
 
 function Fetchapi({ searchResult }) {
@@ -49,6 +50,9 @@ function Fetchapi({ searchResult }) {
                   <p>{api.fields.latitude}</p>
                   <button className="walk-btn">
                     <BsGeoAltFill className="icon" />
+                  </button>
+                  <button className="walk-btn">
+                    <FcLike className="iconLike" />
                   </button>
                 </div>
               </div>
