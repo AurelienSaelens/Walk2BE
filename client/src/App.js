@@ -11,10 +11,10 @@ import Walk from "./pages/Walk/Walk";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import axios from "axios";
-import "./app.css";
+import  "./App.css";
 import Profile from "./pages/Profile/Profile"
 
-axios.defaults.baseURL = "http://walk2be.nicolasbiren.com/";
+axios.defaults.baseURL = "http://walk2be.test/";
 axios.defaults.headers.post["Content-Type"] = "application/json";
 axios.defaults.headers.post["Accept"] = "application/json";
 axios.defaults.withCredentials = true;
@@ -24,7 +24,7 @@ axios.interceptors.request.use(function (config) {
   return config;
 });
 
-function App() {
+export default function App() {
   return (
     <>
     <body className="body-app">
@@ -52,10 +52,18 @@ function App() {
             )}
           </Route>
           <Route exact path="/walk">
+          {localStorage.getItem("auth_token") ? (
             <Walk />
+          ) : (
+            <Home />
+          )}
           </Route>
           <Route exact path="/profile">
-          <Profile />
+          {localStorage.getItem("auth_token") ? (
+            <Profile />
+          ) : (
+            <Home />
+          )}
         </Route>
         </Switch>
       </Router>
@@ -63,5 +71,3 @@ function App() {
     </>
   );
 }
-
-export default App;
