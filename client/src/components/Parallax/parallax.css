@@ -89,5 +89,5 @@ button:focus {
 }
 
 .register {
-    overflow: hidden;
+    overflow: scroll;
 }

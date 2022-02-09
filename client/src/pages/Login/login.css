@@ -32,7 +32,7 @@
   left: 0px;
   height: 100%;
   width: 100%;
-  border: 1px solid #DADCE0;
+  border: 1px solid #000;
   border-radius: 7px;
   font-size: 16px;
   padding: 0 20px;
@@ -68,6 +68,8 @@
   font-size: 16px;
   margin-top: 30px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border: 1px solid #000;
+  border-radius: 7px;
 
 }
 
@@ -82,7 +84,7 @@
 }
 
 .input:focus {
-  border: 2px solid #FFF;
+  border: 2px solid #000;
 }
 .input:not(:placeholder-shown)+ .label {
   top: -7px;
