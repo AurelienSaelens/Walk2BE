@@ -24,7 +24,7 @@ axios.interceptors.request.use(function (config) {
   return config;
 });
 
-function App() {
+export default function App() {
   return (
     <>
     <body className="body-app">
@@ -52,10 +52,18 @@ function App() {
             )}
           </Route>
           <Route exact path="/walk">
+          {localStorage.getItem("auth_token") ? (
             <Walk />
+          ) : (
+            <Home />
+          )}
           </Route>
           <Route exact path="/profile">
-          <Profile />
+          {localStorage.getItem("auth_token") ? (
+            <Profile />
+          ) : (
+            <Home />
+          )}
         </Route>
         </Switch>
       </Router>
@@ -63,5 +71,3 @@ function App() {
     </>
   );
 }
-
-export default App;
