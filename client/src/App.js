@@ -13,7 +13,7 @@ import Register from "./pages/Register/Register";
 import axios from "axios";
 import app from "./app.css";
 
-axios.defaults.baseURL = "http://fundait.test/";
+axios.defaults.baseURL = "http://walk2be.nicolasbiren.com/";
 axios.defaults.headers.post["Content-Type"] = "application/json";
 axios.defaults.headers.post["Accept"] = "application/json";
 axios.defaults.withCredentials = true;
