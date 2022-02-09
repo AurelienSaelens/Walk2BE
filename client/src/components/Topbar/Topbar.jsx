@@ -4,7 +4,6 @@ import { useHistory } from "react-router-dom";
 import swal from "sweetalert";
 import "./topbar.css";
 import {FaUserAlt} from "react-icons/fa"
-import a from '../../../src/Aurlien.png'
 
 function Topbar() {
   const history = useHistory();

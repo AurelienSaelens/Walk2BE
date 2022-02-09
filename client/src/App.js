@@ -11,7 +11,7 @@ import Walk from "./pages/Walk/Walk";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import axios from "axios";
-import app from "./app.css";
+import "./app.css";
 import Profile from "./pages/Profile/Profile"
 
 axios.defaults.baseURL = "http://walk2be.nicolasbiren.com/";

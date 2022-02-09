@@ -18,13 +18,68 @@ function Profile() {
       <Topbar />
       <div className='block-left'>
         <h2>This is a list with your favorites walks : </h2>
-        <div className="card">
+        <div className="card1">
             <div class="container">
             <h2>Bruxelles</h2> 
                 <p>Saint pierre</p>
                 <FcLike className="iconLike" />
             </div>
-        </div>    
+        </div>   
+        <div className="card1">
+        <div class="container">
+        <h2>Bruxelles</h2> 
+            <p>Saint pierre</p>
+            <FcLike className="iconLike" />
+        </div>
+    </div>         <div className="card1">
+    <div class="container">
+    <h2>Bruxelles</h2> 
+        <p>Saint pierre</p>
+        <FcLike className="iconLike" />
+    </div>
+</div>         <div className="card1">
+<div class="container">
+<h2>Bruxelles</h2> 
+    <p>Saint pierre</p>
+    <FcLike className="iconLike" />
+</div>
+</div>         <div className="card1">
+<div class="container">
+<h2>Bruxelles</h2> 
+    <p>Saint pierre</p>
+    <FcLike className="iconLike" />
+</div>
+</div>         <div className="card1">
+<div class="container">
+<h2>Bruxelles</h2> 
+    <p>Saint pierre</p>
+    <FcLike className="iconLike" />
+</div>
+</div>         <div className="card1">
+<div class="container">
+<h2>Bruxelles</h2> 
+    <p>Saint pierre</p>
+    <FcLike className="iconLike" />
+</div>
+</div>         <div className="card1">
+<div class="container">
+<h2>Bruxelles</h2> 
+    <p>Saint pierre</p>
+    <FcLike className="iconLike" />
+</div>
+</div>         <div className="card1">
+<div class="container">
+<h2>Bruxelles</h2> 
+    <p>Saint pierre</p>
+    <FcLike className="iconLike" />
+</div>
+</div>         <div className="card1">
+<div class="container">
+<h2>Bruxelles</h2> 
+    <p>Saint pierre</p>
+    <FcLike className="iconLike" />
+</div>
+</div>  
         </div>  
         <div className='block-right'>
         <h2>Welcome to your profile page : {users}</h2>
