@@ -24,11 +24,10 @@ function Topbar() {
 
   return (
     <div id="topbar">
-    <img className="logo"alt="" src={a} />
       <div className="user-icon">
-      <button className="user-btn">
+      <a href="/profile "type="button"className="user-btn">
       <FaUserAlt />
-      </button>
+      </a>
       </div>
       <button type="button" onClick={logoutSubmit} className="logout">
         Logout

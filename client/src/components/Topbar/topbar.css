@@ -24,9 +24,10 @@
 .user-icon {
   width: 100px;
   color: blue;
-  margin-right: 100px;
-  margin-top: 18px;
+  right: 110px;
   font-size: larger;
+  position: absolute;
+  margin-top: 15px;
 }
 
 .logo {

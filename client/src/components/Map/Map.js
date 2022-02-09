@@ -25,7 +25,32 @@ function Map() {
           setViewport(viewport);
         }}
       >
-       
+        {Api.filter((walk) => {
+          if (search === "") {
+            return false;
+          } else if (
+            walk.fields.entite.toLowerCase().includes(search.toLowerCase())
+          ) {
+            return walk;
+          }
+        }).map((walk) => (
+          <Marker
+            onClick={(e) => {}}
+            key={walk.fields.localite}
+            latitude={walk.geometry.coordinates[1]}
+            longitude={walk.geometry.coordinates[0]}
+          >
+            <button
+              className="walk-btn"
+              onClick={(e) => {
+                e.preventDefault();
+                setSelectedWalk(walk);
+              }}
+            >
+              <BsGeoAltFill className="icon" />
+            </button>
+          </Marker>
+        ))}
 
         {selectedWalk ? (
           <Popup

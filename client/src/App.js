@@ -12,6 +12,7 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import axios from "axios";
 import app from "./app.css";
+import Profile from "./pages/Profile/Profile"
 
 axios.defaults.baseURL = "http://fundait.test/";
 axios.defaults.headers.post["Content-Type"] = "application/json";
@@ -26,6 +27,7 @@ axios.interceptors.request.use(function (config) {
 function App() {
   return (
     <>
+    <body className="body-app">
       <Router>
         <Switch>
           <Route exact path="/">
@@ -52,8 +54,12 @@ function App() {
           <Route exact path="/walk">
             <Walk />
           </Route>
+          <Route exact path="/profile">
+          <Profile />
+        </Route>
         </Switch>
       </Router>
+      </body>
     </>
   );
 }

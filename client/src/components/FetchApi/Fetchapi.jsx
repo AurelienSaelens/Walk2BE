@@ -42,10 +42,10 @@ function Fetchapi() {
             setViewport(viewport);
           }}
         >
-          
+          <Map />
           {Api.filter((walk) => {
             if (search === "") {
-              return "";
+              return false;
             } else if (
               walk.fields.entite.toLowerCase().includes(search.toLowerCase())
             ) {
@@ -115,7 +115,7 @@ function Fetchapi() {
           } else if (
             api.fields.entite.toLowerCase().includes(search.toLowerCase())
           ) {
-            return api;
+            return true;
           }
         }).map((api) => {
           <button
