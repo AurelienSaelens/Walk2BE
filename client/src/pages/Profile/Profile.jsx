@@ -7,7 +7,7 @@ import bg from './bg.jpeg'
 import { FcLike } from "react-icons/fc";
 
 
-function Profile() {
+export default function Profile() {
 
     const users = localStorage.getItem('auth_name');
 
@@ -33,5 +33,3 @@ function Profile() {
       </>
       );
 }  
-
-export default Profile;

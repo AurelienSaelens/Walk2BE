@@ -16,8 +16,9 @@ function Topbar() {
       if (res.data.status === 200) {
         localStorage.removeItem("auth_token");
         localStorage.removeItem("auth_name");
-        swal("Success", res.data.message, "success");
         history.push("/");
+        window.location.reload(false);
+        swal("Success", res.data.message, "success");
       }
     });
   };
