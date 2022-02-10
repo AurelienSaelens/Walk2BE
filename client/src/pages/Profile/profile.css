@@ -4,8 +4,9 @@
     width:50%;
     height: 100%;
     background-image: url('./bg.jpeg');
-    background-size: auto;
-    float:left;
+    background-size:100% ;
+    background-attachment: fixed;
+    float:right;
 
   }
   .block-left h2 {
@@ -17,12 +18,15 @@
 
   .block-right{
     width:50%;
-    height:100vh;
-    background-color:#9896F1;
-    float:left;
+    height: 100vh;
+    background-color:#10102b;
+    float: right;
+    position: absolute;
+    position: fixed;
+    
   }
   .block-right h2 {
-      padding-top: 10px;
+      padding-top: 45px;
       text-align: center;
       color: beige;
       font-weight: 200;
@@ -57,15 +61,54 @@
       margin-bottom: 2px;
   }
 
+  .profile-pic {
+    border-radius: 50%;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    vertical-align: middle;
+    text-align: center;
+    color: transparent;
+    transition: all .3s ease;
+    text-decoration: none;
+    cursor: pointer;
+    background-image: url('../../back.jpeg');
+}
+
+.profile-pic:hover {
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+.profile-pic span {
+    display: inline-block;
+    
+    padding-bottom: 5em;
+}
+
+  
+
+
+
+
 
   @media screen and (max-width: 910px) {
-    .block-left {
-       width: 100%;
-       background-size:100vh;
-    }
     .block-right {
+        position: relative;
         width: 100%;
     }
+    .block-left {
+        width: 100%;
+ 
+     }
+
   }
 
 
