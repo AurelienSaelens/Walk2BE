@@ -92,7 +92,7 @@ export default function Profile() {
           <div className="block-right">
             <h2>
               Welcome to your profile page  <br></br>
-              <b>AurelienSa{users}</b>
+              <b>{users}</b>
             </h2>
             <div class="profile-pic">
             <span class="glyphicon glyphicon-camera"></span>
