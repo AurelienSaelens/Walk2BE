@@ -123,7 +123,7 @@ function Fetchapi() {
             key={api.fields.localite}
             latitude={api.geometry.coordinates[1]}
             longitude={api.geometry.coordinates[0]}
-          ></button>;
+          ></button>
 
           return (
             <>

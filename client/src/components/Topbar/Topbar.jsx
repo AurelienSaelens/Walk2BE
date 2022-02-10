@@ -4,13 +4,13 @@ import { useHistory } from "react-router-dom";
 import swal from "sweetalert";
 import "./topbar.css";
 import {FaUserAlt} from "react-icons/fa"
-import a from '../../../src/Aurlien.png'
 
 function Topbar() {
   const history = useHistory();
 
   const logoutSubmit = (e) => {
-    e.preventDefault();
+   
+        localStorage.clear();
 
     axios.post(`/api/logout`).then((res) => {
       if (res.data.status === 200) {
@@ -30,7 +30,7 @@ function Topbar() {
       <FaUserAlt />
       </a>
       </div>
-      <button type="button" onClick={logoutSubmit} className="logout">
+      <button type="button" onClick={logoutSubmit} Redirect to="/" className="logout">
         Logout
       </button>
     </div>

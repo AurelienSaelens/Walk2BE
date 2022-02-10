@@ -83,6 +83,51 @@ export default function Register({ showModal, setShowModal }) {
             <span>{registerInput.error_list.email}</span>
 
             <div class="inputContainer">
+            <input
+              type=""
+              name="adress"
+              onChange={handleInput}
+              value={registerInput.adress}
+              class="input"
+              placeholder="a"
+            />
+            <label for="" class="label">
+              Adress
+            </label>
+          </div>
+          <span>{registerInput.error_list.adress}</span>
+
+            <div class="inputContainer">
+            <input
+              type=""
+              name="gender"
+              onChange={handleInput}
+              value={registerInput.gender}
+              class="input"
+              placeholder="a"
+            />
+            <label for="" class="label">
+              Gender
+            </label>
+          </div>
+          <span>{registerInput.error_list.gender}</span>
+
+            <div class="inputContainer">
+            <input
+              type=""
+              name="old"
+              onChange={handleInput}
+              value={registerInput.old}
+              class="input"
+              placeholder="a"
+            />
+            <label for="" class="label">
+              Age
+            </label>
+          </div>
+          <span>{registerInput.error_list.email}</span>
+
+            <div class="inputContainer">
               <input
                 type="password"
                 name="password"

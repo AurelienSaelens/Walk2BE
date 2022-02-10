@@ -2,41 +2,51 @@
 
 .block-left{
     width:50%;
-    height: 100vh;
+    height: 100%;
     background-image: url('./bg.jpeg');
-    background-size: 100%;
-    float:left;
+    background-size:100% ;
+    background-attachment: fixed;
+    float:right;
+
   }
   .block-left h2 {
       text-align: center;
       color: beige;
+      padding-top: 10px;
+      font-weight: 200;
   }
 
   .block-right{
     width:50%;
-    height:100vh;
-    background-color:#9896F1;
-    float:left;
+    height: 100vh;
+    background-color:#10102b;
+    float: right;
+    position: absolute;
+    position: fixed;
+    
   }
   .block-right h2 {
+      padding-top: 45px;
       text-align: center;
       color: beige;
+      font-weight: 200;
   }
 
-  .card {
+  .card1 {
     /* Add shadows to create the "card" effect */
     transition: 0.3s;
-    width: 31%;
+    width: 50%;
     padding-top: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
+    padding-bottom: 20px;
+    right: 50%;
+    transform: translateX(46%);
     margin-left: 10px;
     text-align: center;
     background-color: #FFF;
     background: rgba(142, 72, 5, 0.300);
-
     background-color : rgba(255,255,255,0.16);
-
     border-color: #ffaf00;
     border: 10px;
     color: #ffaf00;
@@ -50,3 +60,65 @@
       float: right;
       margin-bottom: 2px;
   }
+
+  .profile-pic {
+    border-radius: 50%;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    vertical-align: middle;
+    text-align: center;
+    color: transparent;
+    transition: all .3s ease;
+    text-decoration: none;
+    cursor: pointer;
+    background-image: url('../../back.jpeg');
+}
+
+.profile-pic:hover {
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+.profile-pic span {
+    display: inline-block;
+    
+    padding-bottom: 5em;
+}
+.inputContainer {
+  width: 75%;
+  margin-top: 25px;
+  position: relative;
+  margin-left: 12%;
+}
+.inputContainer input {
+  border-color: beige;
+}
+
+  
+
+
+
+
+
+  @media screen and (max-width: 910px) {
+    .block-right {
+        position: relative;
+        width: 100%;
+    }
+    .block-left {
+        width: 100%;
+ 
+     }
+
+  }
+
+
+
