@@ -3,7 +3,7 @@ import Topbar from "../../components/Topbar/Topbar";
 import "./profile.css";
 import { FcLike } from "react-icons/fc";
 
-function Profile() {
+export default function Profile() {
   const users = localStorage.getItem("auth_name");
   const email = localStorage.getItem("auth_email");
   const adress = localStorage.getItem("auth_adress");
@@ -167,4 +167,4 @@ function Profile() {
   );
 }
 
-export default Profile;
+

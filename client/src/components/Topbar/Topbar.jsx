@@ -12,9 +12,15 @@ function Topbar() {
    
         localStorage.clear();
 
+    axios.post(`/api/logout`).then((res) => {
+      if (res.data.status === 200) {
+        localStorage.removeItem("auth_token");
+        localStorage.removeItem("auth_name");
         history.push("/");
-      
-    ;
+        window.location.reload(false);
+        swal("Success", res.data.message, "success");
+      }
+    });
   };
 
   return (

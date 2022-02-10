@@ -31,17 +31,13 @@ export default function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-
-              <Home />
-
+            {localStorage.getItem("auth_token") ? <Redirect to="/walk"/> : <Home />}
           </Route>
-          <Route exact path="/walk">
-            <Walk />
+          <Route path="/walk">
+          {localStorage.getItem("auth_token") ? <Walk /> : <Redirect to="/" />}
           </Route>
-          <Route exact path="/profile">
-
-            <Profile />
-
+          <Route path="/profile">
+          {localStorage.getItem("auth_token") ? <Profile />  : <Redirect to="/" />}
         </Route>
         </Switch>
       </Router>
