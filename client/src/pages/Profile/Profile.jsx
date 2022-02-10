@@ -5,6 +5,11 @@ import { FcLike } from "react-icons/fc";
 
 function Profile() {
   const users = localStorage.getItem("auth_name");
+  const email = localStorage.getItem("auth_email");
+  const adress = localStorage.getItem("auth_adress");
+  const old = localStorage.getItem("auth_old");
+  const gender = localStorage.getItem("auth_gender");
+  
 
   return (
     <>
@@ -100,12 +105,12 @@ function Profile() {
           <div class="inputContainer">
             <input
               type=""
-              name="username"
+              name="email"
               class="input"
               placeholder="a"
             />
             <label for="" class="label">
-              Username
+              {email}
             </label>
           </div>
 
@@ -117,20 +122,42 @@ function Profile() {
               placeholder="a"
             />
             <label for="" class="label">
-              Email
+              {adress}
             </label>
           </div>
           <div class="inputContainer">
             <input
-              type="password"
-              name="password"
+              type="number"
+              name="old"
               class="input"
-              placeholder="Password"
+              placeholder="years old"
             />
             <label for="" class="label">
-              Password
+              {old}
             </label>
           </div>
+          <div class="inputContainer">
+          <input
+            type=""
+            name="gender"
+            class="input"
+            placeholder="gender"
+          />
+          <label for="" class="label">
+            {gender}
+          </label>
+        </div>
+        <div class="inputContainer">
+        <input
+          type=""
+          name="gender"
+          class="input"
+          placeholder="gender"
+        />
+        <label for="" class="label">
+          {gender}
+        </label>
+      </div>
         </form>
       </div>
           </div>

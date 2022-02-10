@@ -31,39 +31,17 @@ export default function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-            {localStorage.getItem("auth_token") ? (
-              <Redirect to="/walk" />
-            ) : (
+
               <Home />
-            )}
-          </Route>
-          <Route exact path="/login">
-            {localStorage.getItem("auth_token") ? (
-              <Redirect to="/walk" />
-            ) : (
-              <Login />
-            )}
-          </Route>
-          <Route exact path="/register">
-            {localStorage.getItem("auth_token") ? (
-              <Redirect to="/walk" />
-            ) : (
-              <Register />
-            )}
+
           </Route>
           <Route exact path="/walk">
-          {localStorage.getItem("auth_token") ? (
             <Walk />
-          ) : (
-            <Home />
-          )}
           </Route>
           <Route exact path="/profile">
-          {localStorage.getItem("auth_token") ? (
+
             <Profile />
-          ) : (
-            <Home />
-          )}
+
         </Route>
         </Switch>
       </Router>

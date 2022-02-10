@@ -92,6 +92,15 @@
     
     padding-bottom: 5em;
 }
+.inputContainer {
+  width: 75%;
+  margin-top: 25px;
+  position: relative;
+  margin-left: 12%;
+}
+.inputContainer input {
+  border-color: beige;
+}
 
   
 

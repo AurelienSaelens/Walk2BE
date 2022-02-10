@@ -9,16 +9,12 @@ function Topbar() {
   const history = useHistory();
 
   const logoutSubmit = (e) => {
-    e.preventDefault();
+   
+        localStorage.clear();
 
-    axios.post(`/api/logout`).then((res) => {
-      if (res.data.status === 200) {
-        localStorage.removeItem("auth_token");
-        localStorage.removeItem("auth_name");
-        swal("Success", res.data.message, "success");
         history.push("/");
-      }
-    });
+      
+    ;
   };
 
   return (
@@ -28,7 +24,7 @@ function Topbar() {
       <FaUserAlt />
       </a>
       </div>
-      <button type="button" onClick={logoutSubmit} className="logout">
+      <button type="button" onClick={logoutSubmit} Redirect to="/" className="logout">
         Logout
       </button>
     </div>
