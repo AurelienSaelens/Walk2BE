@@ -5,6 +5,7 @@ import Map from "../Map/Map";
 import { BsGeoAltFill } from "react-icons/bs";
 import { FcLike } from "react-icons/fc";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
+import mapboxgl from 'mapbox-gl';
 
 
 function Fetchapi() {
@@ -22,6 +23,9 @@ function Fetchapi() {
   return (
     <div className="body">
       <div className="posts">
+      <div className="explain">
+        <h2>Here, you can search <br></br> your meeting point</h2>
+      </div>
         <input search here
           id="searchInput"
           type="text"
@@ -42,7 +46,6 @@ function Fetchapi() {
             setViewport(viewport);
           }}
         >
-          <Map />
           {Api.filter((walk) => {
             if (search === "") {
               return false;

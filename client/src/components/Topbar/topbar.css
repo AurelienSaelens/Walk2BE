@@ -11,10 +11,12 @@
   height: 8vh;
 }
 
-.logout{
-  background-image: url('../FetchApi/back1.webp');
-  color: white;
-  border-radius: 10px;
+.logout-btn {
+  position: absolute;
+  margin-top: 20px;
+  right: 5%;
+  text-decoration: none;
+
 }
 
 #topbar h1 {
@@ -22,17 +24,32 @@
 }
 
 .user-icon {
-  width: 100px;
   color: blue;
-  right: 110px;
+  left: 15%;
   font-size: larger;
   position: absolute;
-  margin-top: 15px;
+  margin-top: 20px;
+}
+.user-icon a {
+  margin: 0;
+  padding: 0;
+}
+.home-btn {
+  margin: 0;
+  
+
+left: 5%;
+  position: absolute;
+  padding-top: 20px;
+  top: 1;
+}
+.home-btn a {
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
-  width: 13%;
-  height: 80px;
+  size: 50px;
   margin-bottom: 5px;
   position: relative;
 }
