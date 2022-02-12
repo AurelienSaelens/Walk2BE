@@ -8,8 +8,6 @@ import {
   Redirect,
 } from "react-router-dom";
 import Walk from "./pages/Walk/Walk";
-import Login from "./pages/Login/Login";
-import Register from "./pages/Register/Register";
 import axios from "axios";
 import  "./App.css";
 import Profile from "./pages/Profile/Profile"

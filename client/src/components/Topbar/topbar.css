@@ -15,6 +15,7 @@
   background-image: url('../FetchApi/back1.webp');
   color: white;
   border-radius: 10px;
+  z-index: 99;
 }
 
 #topbar h1 {
