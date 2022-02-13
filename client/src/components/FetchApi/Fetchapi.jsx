@@ -8,16 +8,29 @@ import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import mapboxgl from 'mapbox-gl';
 
 
-function Fetchapi() {
+function Fetchapi(center) {
   const [search, setSearch] = useState("");
   const [selectedWalk, setSelectedWalk] = useState(null);
   const [viewport, setViewport] = useState({
-    latitude: 50.8386528,
-    longitude: 4.4677877,
+    center: center,
     width: "66vw",
     height: "130vh",
     zoom: 9,
   });
+
+
+  navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
+    enableHighAccuracy: true
+  })
+
+  function successLocation(position) {
+    console.log(position);
+    Fetchapi([position.coords.longitude, position.coords.latitude])
+  }
+
+  function errorLocation() {
+
+  }
 
 
   return (
