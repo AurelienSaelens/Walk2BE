@@ -8,11 +8,12 @@ import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import mapboxgl from 'mapbox-gl';
 
 
-function Fetchapi(center) {
+function Fetchapi() {
   const [search, setSearch] = useState("");
   const [selectedWalk, setSelectedWalk] = useState(null);
   const [viewport, setViewport] = useState({
-    center: center,
+    latitude: 50.8386528,
+    longitude: 4.4677877,
     width: "66vw",
     height: "130vh",
     zoom: 9,
@@ -32,6 +33,12 @@ function Fetchapi(center) {
 
   }
 
+  const fnHandleSubmit = event => {
+    event.preventDefault();
+}
+
+
+
 
   return (
     <div className="body">
@@ -39,14 +46,17 @@ function Fetchapi(center) {
       <div className="explain">
         <h2>Here, you can search <br></br> your meeting point</h2>
       </div>
-        <input search here
+      <form onSubmit={e => e.preventDefault()}>
+        <input
           id="searchInput"
           type="text"
           placeholder="search"
           onChange={(e) => {
-            setSearch(e.target.value);
+          setSearch(e.target.value);
           }}
         />
+        </form>
+
 
 
 
