@@ -23,7 +23,7 @@
     float: right;
     position: absolute;
     position: fixed;
-    
+    text-align: center;
   }
   .block-right h2 {
       padding-top: 45px;
@@ -100,6 +100,7 @@
 }
 .inputContainer input {
   border-color: beige;
+  text-align: center;
 }
 
   

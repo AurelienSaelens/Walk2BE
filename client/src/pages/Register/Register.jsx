@@ -12,6 +12,7 @@ export default function Register({ showModal, setShowModal }) {
     email: "",
     password: "",
     adress: "",
+    gender: "",
     error_list: [],
   });
 
@@ -28,6 +29,7 @@ export default function Register({ showModal, setShowModal }) {
       email: registerInput.email,
       password: registerInput.password,
       adress: registerInput.adress,
+      gender: registerInput.gender
     };
 
     axios.get("/sanctum/csrf-cookie").then((response) => {
@@ -35,6 +37,8 @@ export default function Register({ showModal, setShowModal }) {
         if (res.data.status === 200) {
           localStorage.setItem("auth_token", res.data.token);
           localStorage.setItem("auth_name", res.data.username);
+          localStorage.setItem("auth_adress", res.data.adress);
+          localStorage.setItem("auth_gender", res.data.gender);
           swal("Success", res.data.message, "success");
           history.push("/");
         } else {

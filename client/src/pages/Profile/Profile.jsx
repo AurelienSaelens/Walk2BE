@@ -6,7 +6,7 @@ import { FcLike } from "react-icons/fc";
 export default function Profile() {
   const users = localStorage.getItem("auth_name");
   const email = localStorage.getItem("email");
-  const adress = localStorage.getItem("adress");
+  const adress = localStorage.getItem("auth_adress");
   const old = localStorage.getItem("auth_old");
   const gender = localStorage.getItem("auth_gender");
   
@@ -105,12 +105,12 @@ export default function Profile() {
           <div class="inputContainer">
             <input
               type=""
-              name="email"
+              name={email}
               class="input"
               placeholder="a"
             />
             <label for="" class="label">
-              {email}
+              
             </label>
           </div>
 
