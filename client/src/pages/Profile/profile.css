@@ -97,13 +97,10 @@
   margin-top: 25px;
   position: relative;
   margin-left: 12%;
-}
-.inputContainer input {
-  border-color: beige;
-  text-align: center;
+  height: 50px;
 }
 
-  
+
 
 
 
