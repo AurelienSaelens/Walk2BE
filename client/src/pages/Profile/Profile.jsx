@@ -5,8 +5,8 @@ import { FcLike } from "react-icons/fc";
 
 export default function Profile() {
   const users = localStorage.getItem("auth_name");
-  const email = localStorage.getItem("auth_email");
-  const adress = localStorage.getItem("auth_adress");
+  const email = localStorage.getItem("email");
+  const adress = localStorage.getItem("adress");
   const old = localStorage.getItem("auth_old");
   const gender = localStorage.getItem("auth_gender");
   

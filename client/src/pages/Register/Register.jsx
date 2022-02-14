@@ -11,6 +11,7 @@ export default function Register({ showModal, setShowModal }) {
     name: "",
     email: "",
     password: "",
+    adress: "",
     error_list: [],
   });
 
@@ -26,6 +27,7 @@ export default function Register({ showModal, setShowModal }) {
       username: registerInput.username,
       email: registerInput.email,
       password: registerInput.password,
+      adress: registerInput.adress,
     };
 
     axios.get("/sanctum/csrf-cookie").then((response) => {
@@ -44,6 +46,10 @@ export default function Register({ showModal, setShowModal }) {
       });
     });
   };
+
+
+
+
 
   return (
     <>
