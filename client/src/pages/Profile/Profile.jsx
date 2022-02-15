@@ -2,10 +2,11 @@ import React from "react";
 import Topbar from "../../components/Topbar/Topbar";
 import "./profile.css";
 import { FcLike } from "react-icons/fc";
+import Register from "../../pages/Register/Register"
 
 export default function Profile() {
   const users = localStorage.getItem("auth_name");
-  const email = localStorage.getItem("auth_email");
+  const email = data.email
   const adress = localStorage.getItem("auth_adress");
   const old = localStorage.getItem("auth_old");
   const gender = localStorage.getItem("auth_gender");

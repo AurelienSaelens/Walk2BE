@@ -11,11 +11,18 @@
   height: 8vh;
 }
 
+.logout{
+  background-image: url('../FetchApi/back1.webp');
+  color: white;
+  border-radius: 10px;
+  z-index: 99;
+
 .logout-btn {
   position: absolute;
   margin-top: 20px;
   right: 5%;
   text-decoration: none;
+
 
 }
 

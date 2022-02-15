@@ -1,31 +1,34 @@
 import axios from "axios";
 import React from "react";
 import { useHistory } from "react-router-dom";
-import swal from "sweetalert";
 import "./topbar.css";
 import {FaUserAlt} from "react-icons/fa"
 import {ImHome3} from 'react-icons/im'
 import {RiLogoutBoxFill} from "react-icons/ri"
 
-function Topbar() {
+export default function Topbar() {
   const history = useHistory();
 
   const logoutSubmit = (e) => {
-   
-        localStorage.clear();
+    e.preventDefault();
 
     axios.post(`/api/logout`).then((res) => {
       if (res.data.status === 200) {
         localStorage.removeItem("auth_token");
         localStorage.removeItem("auth_name");
         history.push("/");
+
+        window.location.reload(false);
+
       }
     });
   };
 
   return (
+    <>
     <div id="topbar">
       <div className="user-icon">
+
       <a href="/profile "type="button"className="user-btn">
       <FaUserAlt size={25}/>
       </a>
@@ -41,7 +44,7 @@ function Topbar() {
       </a>
       </div>
     </div>
+    </>
   );
 }
 
-export default Topbar;
