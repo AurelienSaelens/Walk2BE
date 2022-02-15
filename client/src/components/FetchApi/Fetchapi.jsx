@@ -10,6 +10,7 @@ import mapboxgl from 'mapbox-gl';
 
 function Fetchapi() {
   const [search, setSearch] = useState("");
+  const [inputKey, setInputKey] = useState("");
   const [selectedWalk, setSelectedWalk] = useState(null);
   const [viewport, setViewport] = useState({
     latitude: 50.8386528,
@@ -33,27 +34,23 @@ function Fetchapi() {
 
   }
 
-  const fnHandleSubmit = event => {
-    event.preventDefault();
-}
-
-
-
-
+  function submit(e)  {
+    e.preventDefault()
+    setSearch(inputKey);
+  }
+  
   return (
     <div className="body">
       <div className="posts">
       <div className="explain">
         <h2>Here, you can search <br></br> your meeting point</h2>
       </div>
-      <form onSubmit={e => e.preventDefault()}>
+      <form onSubmit={submit}>
         <input
           id="searchInput"
           type="text"
           placeholder="search"
-          onChange={(e) => {
-          setSearch(e.target.value);
-          }}
+          onChange={e => setInputKey(e.target.value)}
         />
         </form>
 
