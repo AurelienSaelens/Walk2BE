@@ -11,6 +11,9 @@ export default function Register({ showModal, setShowModal }) {
     name: "",
     email: "",
     password: "",
+    adress: "",
+    gender: "",
+    old:"",
     error_list: [],
   });
 
@@ -26,6 +29,9 @@ export default function Register({ showModal, setShowModal }) {
       username: registerInput.username,
       email: registerInput.email,
       password: registerInput.password,
+      adress: registerInput.adress,
+      gender: registerInput.gender,
+      old: registerInput.old
     };
 
     const email = data.email
@@ -35,6 +41,10 @@ export default function Register({ showModal, setShowModal }) {
         if (res.data.status === 200) {
           localStorage.setItem("auth_token", res.data.token);
           localStorage.setItem("auth_name", res.data.username);
+          localStorage.setItem("auth_adress", res.data.adress);
+          localStorage.setItem("auth_gender", res.data.gender);
+          localStorage.setItem("auth_old", res.data.old);
+          localStorage.setItem("auth_email", res.data.email);
           swal("Success", res.data.message, "success");
           history.push("/");
         } else {
@@ -46,6 +56,10 @@ export default function Register({ showModal, setShowModal }) {
       });
     });
   };
+
+
+
+
 
   return (
     <>

@@ -5,10 +5,12 @@ import Map from "../Map/Map";
 import { BsGeoAltFill } from "react-icons/bs";
 import { FcLike } from "react-icons/fc";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
+import mapboxgl from 'mapbox-gl';
 
 
 function Fetchapi() {
   const [search, setSearch] = useState("");
+  const [inputKey, setInputKey] = useState("");
   const [selectedWalk, setSelectedWalk] = useState(null);
   const [viewport, setViewport] = useState({
     latitude: 50.8386528,
@@ -19,17 +21,39 @@ function Fetchapi() {
   });
 
 
+  navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
+    enableHighAccuracy: true
+  })
+
+  function successLocation(position) {
+    console.log(position);
+    Fetchapi([position.coords.longitude, position.coords.latitude])
+  }
+
+  function errorLocation() {
+
+  }
+
+  function submit(e)  {
+    e.preventDefault()
+    setSearch(inputKey);
+  }
+  
   return (
     <div className="body">
       <div className="posts">
-        <input search here
+      <div className="explain">
+        <h2>Here, you can search <br></br> your meeting point</h2>
+      </div>
+      <form onSubmit={submit}>
+        <input
           id="searchInput"
           type="text"
           placeholder="search"
-          onChange={(e) => {
-            setSearch(e.target.value);
-          }}
+          onChange={e => setInputKey(e.target.value)}
         />
+        </form>
+
 
 
 
@@ -42,7 +66,6 @@ function Fetchapi() {
             setViewport(viewport);
           }}
         >
-          <Map />
           {Api.filter((walk) => {
             if (search === "") {
               return false;

@@ -14,7 +14,7 @@
 
 <br>
 
-![preview](/images/walk2BEMap.png)
+![preview](/images/Walk.png)
 ---
 
 # Langages used : 
