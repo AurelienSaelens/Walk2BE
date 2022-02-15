@@ -1,6 +1,6 @@
 import React from "react";
 import "./slider.css";
-import a from "./Images/a.png";
+import a from "./Images/mount.jpeg";
 import b from "./Images/b.png";
 import c from "./Images/c.webp";
 import d from "./Images/d.png";

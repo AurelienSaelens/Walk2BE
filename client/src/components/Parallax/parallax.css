@@ -1,3 +1,5 @@
+
+
 .keyart, .keyart_layer {
       height: 1000px;
 }
@@ -72,18 +74,16 @@ button {
     z-index: 15;
     right: 1%;
     text-decoration: none;
+    justify-items:center;
+    margin-left: 30px;
 }
 .button1 {
     position: absolute;
-    right: 9%;
-    margin-right: 5px;
-    z-index: 99;
+    right: 90px;
     top: 0;
-
+    margin-right: 30px;
 }
 
 
 
-button:focus {
-    outline: none;
-}
+

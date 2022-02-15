@@ -1,9 +1,9 @@
 .body-app {
     background-image: url('./back.jpg');
     background-size: contain;
-    height: auto;
     width: 100%;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
 }
+
 
 
