@@ -29,6 +29,21 @@
   color: #fff;
 }
 
+.walk-btn {
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+  left: 25px;
+}
+.like-btn {
+  right: 25px;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+}
+
 #searchInput {
   position: relative;
   width: 300px;
