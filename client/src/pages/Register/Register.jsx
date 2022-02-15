@@ -45,7 +45,8 @@ export default function Register({ showModal, setShowModal }) {
           localStorage.setItem("auth_old", res.data.old);
           localStorage.setItem("auth_email", res.data.email);
           swal("Success", res.data.message, "success");
-          history.push("/");
+          window.location.replace("/");
+
         } else {
           setRegister({
             ...registerInput,
