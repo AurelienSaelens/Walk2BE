@@ -46,7 +46,8 @@ function Fetchapi() {
         <h2>Here, you can search <br></br> your meeting point</h2>
       </div>
       <form onSubmit={submit}>
-        <input
+        <input 
+          autocomplete="off"
           id="searchInput"
           type="text"
           placeholder="search"
@@ -159,7 +160,7 @@ function Fetchapi() {
                   <button className="walk-btn">
                     <BsGeoAltFill className="icon" />
                   </button>
-                  <button className="walk-btn">
+                  <button className="like-btn">
                     <FcLike className="iconLike" />
                   </button>
                 </div>
