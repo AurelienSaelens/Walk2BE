@@ -28,6 +28,8 @@ export default function Register({ showModal, setShowModal }) {
       password: registerInput.password,
     };
 
+    const email = data.email
+
     axios.get("/sanctum/csrf-cookie").then((response) => {
       axios.post(`/api/register`, data).then((res) => {
         if (res.data.status === 200) {
