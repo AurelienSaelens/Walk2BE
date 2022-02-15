@@ -26,19 +26,22 @@
 
 # To do (for myself): 
 
-- Topbar + css
-- Add marker when searching
-- Search bar style
+
 - Dark mode (switch style of map and BGimage)
 - Responsive
-- Setting modal when scroll and click
 - Add a bit of content
 - Find image to drag and drop
-- 
 ---
 
 # Done : 
-
+- Homepage
+- Search bar
+- Map + Marker + popup
+- Modal setting
+- Drag and Drop
+- All backend
+- Parallax
+- 
 ---
 
 # Features : 
