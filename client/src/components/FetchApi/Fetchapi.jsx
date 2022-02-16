@@ -6,7 +6,6 @@ import { BsGeoAltFill } from "react-icons/bs";
 import { FcLike } from "react-icons/fc";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import mapboxgl from 'mapbox-gl';
-import { FormattedMessage } from 'react-intl';
 
 
 function Fetchapi() {
