@@ -6,6 +6,7 @@ import { BsGeoAltFill } from "react-icons/bs";
 import { FcLike } from "react-icons/fc";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import mapboxgl from 'mapbox-gl';
+import { FormattedMessage } from 'react-intl';
 
 
 function Fetchapi() {
@@ -45,15 +46,16 @@ function Fetchapi() {
       <div className="explain">
         <h2>Here, you can search <br></br> your meeting point</h2>
       </div>
+
       <form onSubmit={submit}>
-        <input 
+        <input
           autocomplete="off"
-          id="searchInput"
+          className="searchInput"
           type="text"
-          placeholder="search"
+          placeholder="Press Enter!"
           onChange={e => setInputKey(e.target.value)}
         />
-        </form>
+      </form>
 
 
 

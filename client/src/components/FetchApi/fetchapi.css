@@ -44,7 +44,7 @@
   height: 0;
 }
 
-#searchInput {
+.searchInput {
   position: relative;
   width: 300px;
   height: 60px;
@@ -65,6 +65,7 @@
   text-decoration: none;
   text-align: center;
 }
+
 .card p {
   color: #fff;
 }
@@ -92,18 +93,9 @@
   margin-left: 8%;
 }
 
-#searchInput[type="text"]:focus {
-  background-color: #fff;
-  background: rgba(142, 72, 5, 0.3);
-  background-color: rgba(255, 255, 255, 0.16);
-}
-#searchInput[type="text"]:active {
-  background-color: #fff;
-  background: rgba(142, 72, 5, 0.3);
-  background-color: rgba(255, 255, 255, 0.16);
-}
 
-#searchInput[type="text"] {
+
+.searchInput[type="text"] {
   font-size: 24px;
   font-weight: 200;
 }
