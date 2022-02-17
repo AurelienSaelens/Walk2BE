@@ -6,10 +6,9 @@ import { BsGeoAltFill } from "react-icons/bs";
 import { FcLike } from "react-icons/fc";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import mapboxgl from 'mapbox-gl';
-import { FormattedMessage } from 'react-intl';
 
 
-function Fetchapi() {
+export default function Fetchapi() {
   const [search, setSearch] = useState("");
   const [inputKey, setInputKey] = useState("");
   const [selectedWalk, setSelectedWalk] = useState(null);
@@ -175,4 +174,4 @@ function Fetchapi() {
   );
 }
 
-export default Fetchapi;
+

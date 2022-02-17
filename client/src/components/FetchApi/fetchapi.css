@@ -66,6 +66,11 @@
   text-align: center;
 }
 
+.searchInput::placeholder{
+  color:beige;
+  opacity: 0.5;
+}
+
 .card p {
   color: #fff;
 }

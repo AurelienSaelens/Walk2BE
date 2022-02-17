@@ -8,7 +8,7 @@ import {RiLogoutBoxFill} from "react-icons/ri"
 
 export default function Topbar() {
   const history = useHistory();
-
+  const user = localStorage.getItem('auth_name');
   const logoutSubmit = (e) => {
     e.preventDefault();
 
@@ -32,6 +32,7 @@ export default function Topbar() {
       <a href="/profile "type="button"className="user-btn">
       <FaUserAlt size={25}/>
       </a>
+      <div className="user">Hi, {user}</div>
       </div>
       <div className="home-btn">
       <a href="/ "type="button"className="home-btn">
