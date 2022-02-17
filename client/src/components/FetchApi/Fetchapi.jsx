@@ -8,7 +8,7 @@ import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import mapboxgl from 'mapbox-gl';
 
 
-function Fetchapi() {
+export default function Fetchapi() {
   const [search, setSearch] = useState("");
   const [inputKey, setInputKey] = useState("");
   const [selectedWalk, setSelectedWalk] = useState(null);
@@ -174,4 +174,4 @@ function Fetchapi() {
   );
 }
 
-export default Fetchapi;
+
