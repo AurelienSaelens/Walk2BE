@@ -104,3 +104,8 @@
   font-size: 24px;
   font-weight: 200;
 }
+
+.searchInput::placeholder {
+  color:beige;
+  opacity: 0.5;
+}

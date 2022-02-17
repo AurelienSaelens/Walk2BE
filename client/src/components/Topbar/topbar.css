@@ -23,6 +23,14 @@
 #topbar h1 {
   color: #FFF;
 }
+.user {
+  position: relative;
+  display: flex;
+  left: 50%;
+  top: -27px;
+  color: beige;
+  font-weight: 200;
+}
 
 .user-icon {
   color: blue;
