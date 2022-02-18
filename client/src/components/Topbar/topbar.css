@@ -1,4 +1,4 @@
-#topbar{
+.topbar{
 
   display: flex;
   justify-content: space-between;
@@ -11,13 +11,38 @@
   height: 8vh;
 }
 
+.topbar-light{
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  background-color: grey;
+  background-size: auto;
+  size: 10%;
+  top:0;
+  z-index: 15;
+  height: 8vh;
+}
 
+.dark-btn {
+  position: absolute;
+  margin-top: 1.4vh;
+  right: 10%;
+}
 
-.logout-btn {
+.logout {
   position: absolute;
   margin-top: 20px;
   right: 5%;
   text-decoration: none;
+  color:blue;
+}
+
+.logout-light {
+  position: absolute;
+  margin-top: 20px;
+  right: 5%;
+  text-decoration: none;
+  color:white;
 }
 
 #topbar h1 {
@@ -32,6 +57,15 @@
   font-weight: 200;
 }
 
+.user-light {
+  position: relative;
+  display: flex;
+  left: 50%;
+  top: -27px;
+  color: white;
+  font-weight: 200;
+}
+
 .user-icon {
   color: blue;
   left: 15%;
@@ -43,18 +77,36 @@
   margin: 0;
   padding: 0;
 }
+
+.user-btn{
+  color:blue;
+}
+
+.user-btn-light {
+color:white;
+}
+
 .home-btn {
   margin: 0;
-  
-
-left: 5%;
+  left: 5%;
   position: absolute;
   padding-top: 20px;
   top: 1;
+  color:blue;
 }
+
 .home-btn a {
   margin: 0;
   padding: 0;
+}
+
+.home-btn-light {
+  margin: 0;
+  left: 5%;
+  position: absolute;
+  padding-top: 20px;
+  top: 1;
+  color:white;
 }
 
 .logo {
