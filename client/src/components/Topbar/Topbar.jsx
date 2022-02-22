@@ -2,6 +2,7 @@ import axios from "axios";
 import React from "react";
 import { useHistory } from "react-router-dom";
 import "./topbar.css";
+import "../FetchApi/fetchapi.css"
 import {FaUserAlt} from "react-icons/fa";
 import {ImHome3} from 'react-icons/im';
 import {RiLogoutBoxFill} from "react-icons/ri";
@@ -41,13 +42,17 @@ export default function Topbar() {
       document.getElementById('home-btn').classList.toggle('home-btn-light');
       document.getElementById('logout').classList.toggle('logout');
       document.getElementById('logout').classList.toggle('logout-light');
+      document.getElementById('card').classList.toggle('card');
+      document.getElementById('card').classList.toggle('card-light');
+      document.getElementById('card').classList.toggle('like-btn');
+      document.getElementById('card').classList.toggle('iconLike');
+
     };
 
   return (
     <>
     <div id="topbar" className="topbar">
       <div className="user-icon">
-
       <a href="/profile" type="button" id="user-btn" className="user-btn">
       <FaUserAlt size={25}/>
       </a>
