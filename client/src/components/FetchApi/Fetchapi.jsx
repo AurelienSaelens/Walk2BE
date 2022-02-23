@@ -152,8 +152,8 @@ export default function Fetchapi() {
 
           return (
             <>
-              <div className="card">
-                <div class="container">
+              <div id="card" className="card">
+                <div className="container">
                   <h2>{api.fields.entite}</h2>
                   <p>{api.fields.localite}</p>
                   <p>{api.fields.longitude}</p>

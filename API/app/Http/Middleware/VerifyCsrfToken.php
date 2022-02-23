@@ -12,8 +12,8 @@ class VerifyCsrfToken extends Middleware
      * @var array<int, string>
      */
     protected $except = [
-        'http://fundait.test/api/register',
-        'http://fundait.test/api/login',
-        'http://fundait.test/api/logout',
+        'http://walk2be.test/api/register',
+        'http://walk2be.test/api/login',
+        'http://walk2be.test/api/logout',
     ];
 }
