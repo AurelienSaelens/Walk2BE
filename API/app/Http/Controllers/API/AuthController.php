@@ -42,11 +42,11 @@ class AuthController extends Controller
                 'status'=>200,
                 'username'=>$user->name,
                 'token'=>$token,
+                'message'=>'Registered Successfully',
                 'adress'=>$user->adress,
                 'gender'=>$user->gender,
                 'old'=>$user->old,
                 'email'=>$user->email,
-                'message'=>'Registered Successfully',
             ]);
         }
     }
