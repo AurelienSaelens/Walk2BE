@@ -2,7 +2,6 @@ import React from "react";
 import Topbar from "../../components/Topbar/Topbar";
 import "./profile.css";
 import { FcLike } from "react-icons/fc";
-import Register from "../../pages/Register/Register"
 
 export default function Profile() {
   const users = localStorage.getItem("auth_name");
